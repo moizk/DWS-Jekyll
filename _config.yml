@@ -1,3 +1,3 @@
 name: DWS Design
 markdown: redcarpet
-pygments: true
+highlighter: true
