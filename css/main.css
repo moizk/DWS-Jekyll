@@ -82,7 +82,7 @@ div.about-page p {
   /* Visual */
   /* Misc */ }
 
-div.blue-block {
+div.story-block {
   /* Positioning */
   /* Box-model */
   height: 350px;
@@ -93,7 +93,7 @@ div.blue-block {
   background-repeat: no-repeat;
   background-position: center;
   /* Misc */ }
-  div.blue-block div.blue-overlay {
+  div.story-block div.blue-overlay {
     width: 350px;
     height: 350px;
     background-color: rgba(47, 121, 231, 0.65);
@@ -101,9 +101,9 @@ div.blue-block {
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out; }
-    div.blue-block div.blue-overlay:hover {
+    div.story-block div.blue-overlay:hover {
       background-color: rgba(47, 121, 231, 0); }
-  div.blue-block h5 {
+  div.story-block h5 {
     color: #fff;
     text-align: center;
     z-index: 10;
@@ -113,7 +113,7 @@ div.blue-block {
     text-transform: uppercase;
     font-weight: bold; }
 
-div.red-block {
+div.team-block {
   /* Positioning */
   /* Box-model */
   height: 350px;
@@ -125,7 +125,7 @@ div.red-block {
   background-position: center;
   color: #fff;
   /* Misc */ }
-  div.red-block div.blue-overlay {
+  div.team-block div.blue-overlay {
     width: 350px;
     height: 350px;
     background-color: rgba(47, 121, 231, 0.65);
@@ -133,9 +133,9 @@ div.red-block {
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out; }
-    div.red-block div.blue-overlay:hover {
+    div.team-block div.blue-overlay:hover {
       background-color: rgba(47, 121, 231, 0); }
-  div.red-block h5 {
+  div.team-block h5 {
     color: #fff;
     text-align: center;
     z-index: 10;
@@ -145,7 +145,7 @@ div.red-block {
     text-transform: uppercase;
     font-weight: bold; }
 
-div.purple-block {
+div.legacy-block {
   /* Positioning */
   /* Box-model */
   height: 350px;
@@ -157,7 +157,7 @@ div.purple-block {
   background-position: center;
   color: #fff;
   /* Misc */ }
-  div.purple-block div.blue-overlay {
+  div.legacy-block div.blue-overlay {
     width: 350px;
     height: 350px;
     background-color: rgba(47, 121, 231, 0.65);
@@ -165,9 +165,105 @@ div.purple-block {
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out; }
-    div.purple-block div.blue-overlay:hover {
+    div.legacy-block div.blue-overlay:hover {
       background-color: rgba(47, 121, 231, 0); }
-  div.purple-block h5 {
+  div.legacy-block h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+div.clients-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url("../img/about/clients.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */ }
+  div.clients-block div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47, 121, 231, 0.65);
+    z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out; }
+    div.clients-block div.blue-overlay:hover {
+      background-color: rgba(47, 121, 231, 0); }
+  div.clients-block h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+div.printing-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url("../img/about/printing.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */ }
+  div.printing-block div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47, 121, 231, 0.65);
+    z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out; }
+    div.printing-block div.blue-overlay:hover {
+      background-color: rgba(47, 121, 231, 0); }
+  div.printing-block h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+div.design-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url("../img/about/design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */ }
+  div.design-block div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47, 121, 231, 0.65);
+    z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out; }
+    div.design-block div.blue-overlay:hover {
+      background-color: rgba(47, 121, 231, 0); }
+  div.design-block h5 {
     color: #fff;
     text-align: center;
     z-index: 10;
