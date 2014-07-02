@@ -75,6 +75,31 @@ button.btn-circle {
   }
 }
 
+div.about-page {
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+  hr {
+    border-color: #333;
+    border-style: dotted;
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: georgia, serif;
+    font-size: 18px;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 div.blue-block {
   /* Positioning */
   /* Box-model */
@@ -91,6 +116,12 @@ div.blue-block {
     height: 350px;
     background-color: rgba(47,121,231, .65);
     z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+       -moz-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+    &:hover {
+      background-color: rgba(47,121,231, 0);
+    }
   }
   h5 {
     color: #fff;
@@ -121,6 +152,12 @@ div.red-block {
     height: 350px;
     background-color: rgba(47,121,231, .65);
     z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+       -moz-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+    &:hover {
+      background-color: rgba(47,121,231, 0);
+    }
   }
   h5 {
     color: #fff;
@@ -151,6 +188,13 @@ div.purple-block {
     height: 350px;
     background-color: rgba(47,121,231, .65);
     z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+       -moz-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(47,121,231, 0);
+    }
   }
   h5 {
     color: #fff;
