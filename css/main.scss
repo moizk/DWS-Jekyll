@@ -100,7 +100,7 @@ div.about-page {
   }
 }
 
-div.blue-block {
+div.story-block {
   /* Positioning */
   /* Box-model */
   height: 350px;
@@ -135,7 +135,7 @@ div.blue-block {
   }
 }
 
-div.red-block {
+div.team-block {
   /* Positioning */
   /* Box-model */
   height: 350px;
@@ -171,7 +171,7 @@ div.red-block {
   }
 }
 
-div.purple-block {
+div.legacy-block {
   /* Positioning */
   /* Box-model */
   height: 350px;
@@ -179,6 +179,117 @@ div.purple-block {
   line-height: 350px;
   /* Visual */
   background-image: url('../img/about/sustain.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */
+  div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47,121,231, .65);
+    z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+       -moz-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(47,121,231, 0);
+    }
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+div.clients-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url('../img/about/clients.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */
+  div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47,121,231, .65);
+    z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+       -moz-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(47,121,231, 0);
+    }
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+div.printing-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url('../img/about/printing.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */
+  div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47,121,231, .65);
+    z-index: -51;
+    -webkit-transition: all 400ms ease-in-out;
+       -moz-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(47,121,231, 0);
+    }
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+div.design-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url('../img/about/design.jpg');
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
