@@ -1,0 +1,169 @@
+---
+---
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+div.introduction-jumbotron {
+  background-image: url('../img/jumbo.jpg');
+  background-size: cover;
+  background-position: center;
+
+  height: 940px;
+  text-align: center;
+}
+
+div.introduction-jumbotron nav.top-navigation ul li a {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  line-height: 120px;
+  /* Visual */
+  color: #fff;
+  /* Misc */
+}
+
+nav.top-navigation ul li a {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  line-height: 120px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  /* Visual */
+  color: #333;
+  /* Misc */
+  &:hover {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    text-decoration: none;
+    /* Visual */
+    color: #2f79e7;
+    /* Misc */
+  }
+}
+
+button.btn-circle {
+  /* Positioning */
+  /* Box-model */
+  width: 200px;
+  height: 200px;
+  /* Typography */
+  /* Visual */
+  background-color: #df4a37;
+  color: #fff;
+  /* Misc */
+  -webkit-transition: all 400ms ease-in-out;
+     -moz-transition: all 400ms ease-in-out;
+          transition: all 400ms ease-in-out;
+
+  border-width: 0;
+  -webkit-border-radius: 200px;
+     -moz-border-radius: 200px;
+          border-radius: 200px;
+  &:hover {
+    background-color: #9a3326;
+  }
+  &:active {
+    outline: 0;
+  }
+}
+
+div.blue-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url('../img/about/story.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Misc */
+  div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47,121,231, .65);
+    z-index: -51;
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+div.red-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url('../img/about/team.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */
+  div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47,121,231, .65);
+    z-index: -51;
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+div.purple-block {
+  /* Positioning */
+  /* Box-model */
+  height: 350px;
+  /* Typography */
+  line-height: 350px;
+  /* Visual */
+  background-image: url('../img/about/sustain.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  /* Misc */
+  div.blue-overlay {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(47,121,231, .65);
+    z-index: -51;
+  }
+  h5 {
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    margin-top: -220px;
+    font-family: "proxima-nova", Helvetica, arial, sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+div.footer {
+  padding-top: 100px;
+}
