@@ -322,3 +322,35 @@ div.design-block {
 div.footer {
   padding-top: 100px;
 }
+
+div.minimal-story-container {
+  /* Positioning */
+  /* Box-model */
+  margin: 0 auto;
+  max-width: 700px;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: "minion-pro", serif;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 400;
+    /* Visual */
+    /* Misc */
+  }
+  img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
