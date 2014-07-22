@@ -100,6 +100,38 @@ div.dws-page-header {
   }
 }
 
+div.legacy-page {
+  /* Positioning */
+  /* Box-model */
+  margin: 0 auto;
+  max-width: 800px;
+  /* Typography */
+  font-family: "minion-pro", georgia, serif;
+  /* Visual */
+  /* Misc */
+  p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: "minion-pro", georgia, serif;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 400;
+    /* Visual */
+    /* Misc */
+  }
+  li {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 div.story-block {
   /* Positioning */
   /* Box-model */
