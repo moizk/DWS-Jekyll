@@ -132,6 +132,33 @@ div.legacy-page {
   }
 }
 
+div.team-page {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-family: "proxima-nova", Helvetica, sans-serif;
+  /* Visual */
+  /* Misc */
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+  }
+  h4 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 div.story-block {
   /* Positioning */
   /* Box-model */
@@ -353,6 +380,20 @@ div.design-block {
 
 div.footer {
   padding-top: 100px;
+}
+
+h1#story-headline {
+  /* Positioning */
+  /* Box-model */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* Typography */
+  font-family: "proxima-nova", Helvetica, arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  /* Visual */
+  /* Misc */
 }
 
 div.minimal-story-container {
