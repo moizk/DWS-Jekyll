@@ -6,6 +6,10 @@
 /* Common
 /*
 /*****************************************************************************/
+ * {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+ }
+
 
 div#bgvid {
   width: auto;
@@ -48,28 +52,51 @@ div#bgvid {
   }
 }
 
-nav.top-navigation ul li a {
-  /* Positioning */
-  /* Box-model */
-  /* Typography */
-  line-height: 120px;
-  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 12px;
-  /* Visual */
-  color: #333;
-  /* Misc */
-  &:hover {
-    /* Positioning */
-    /* Box-model */
-    /* Typography */
-    text-decoration: none;
-    /* Visual */
-    color: #2f79e7;
-    /* Misc */
+nav.top-navigation {
+  height: 70px;
+  img {
+    padding-top: 2px;
+  }
+  h5 {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 70px;
+    margin: 0;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  ul {
+    margin-bottom: 0;
+    li {
+      a {
+        /* Positioning */
+        /* Box-model */
+        /* Typography */
+        line-height: 70px;
+        font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        /* Visual */
+        color: #333;
+        /* Misc */
+        &:hover {
+          /* Positioning */
+          /* Box-model */
+          /* Typography */
+          text-decoration: none;
+          /* Visual */
+          color: #2f79e7;
+          /* Misc */
+        }
+      }
+    }
   }
 }
+
 
 div.dws-page-header {
   h2 {
@@ -102,6 +129,56 @@ div.dws-page-header {
 /*
 /*****************************************************************************/
 
+div.about-page-header {
+  /* Positioning */
+  /* Box-model */
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+  /* Typography */
+  /* Visual */
+  background-color: #0f4d6b;
+  color: #fff;
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-bottom: 0;
+    padding-top: 35px;
+    /* Typography */
+    font-size: 60px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */
+  }
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Typography */
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 div.about-card {
   /* Positioning */
   /* Box-model */
@@ -119,6 +196,8 @@ div.about-card {
     /* Typography */
     /* Visual */
     /* Misc */
+    &:hover {
+    }
     img {
       vertical-align: bottom;
     }
@@ -133,7 +212,7 @@ div.about-card {
     /* Typography */
     text-align: center;
     /* Visual */
-    background-color: rgba(47,121,231, .7);
+    background-color: rgba(34,34,34, .8);
     color: #fff;
     /* Misc */
     -webkit-transition: all 300ms ease-in-out;
@@ -152,6 +231,8 @@ div.about-card {
       /* Positioning */
       /* Box-model */
       padding-top: 130px;
+      height: 350px;
+      width: 100%;
       /* Typography */
       font-family: 'proxima-nova', Helvetica, Arial;
       font-weight: 800;
@@ -159,9 +240,48 @@ div.about-card {
       /* Visual */
       font-size: 50px;
       /* Misc */
+      -webkit-transition: all .3s ease-in-out;
+         -moz-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out;
+
+      &:hover {
+        opacity: 0;
+      }
     }
   }
 }
+
+div#dws_about_page_map {
+  height: 720px;
+}
+
+h2#the-worst {
+  /* Positioning */
+  /* Box-model */
+  margin-bottom: 40px;
+  /* Typography */
+  font-size: 50px;
+  font-weight: 300;
+  /* Visual */
+  /* Misc */
+}
+
+h3#fourc {
+  /* Positioning */
+  /* Box-model */
+  margin-bottom: 30px;
+  /* Typography */
+  font-weight: 300;
+  text-align: center;
+  /* Visual */
+  /* Misc */
+}
+
+/*****************************************************************************/
+/*
+/* Legacy
+/*
+/*****************************************************************************/
 
 div.legacy-page {
   /* Positioning */
@@ -195,6 +315,12 @@ div.legacy-page {
   }
 }
 
+/*****************************************************************************/
+/*
+/* Team
+/*
+/*****************************************************************************/
+
 div.team-page {
   /* Positioning */
   /* Box-model */
@@ -223,9 +349,22 @@ div.team-page {
 }
 
 
+/*****************************************************************************/
+/*
+/* Footer
+/*
+/*****************************************************************************/
+
 div.footer {
-  padding-top: 100px;
+  padding-top: 50px;
 }
+
+
+/*****************************************************************************/
+/*
+/* Story Page
+/*
+/*****************************************************************************/
 
 h1#story-headline {
   /* Positioning */
@@ -274,27 +413,11 @@ div.minimal-story-container {
 }
 
 
-// About Page
-
-div.video-caption {
-  /* Positioning */
-  position: absolute;
-  margin-top: -200px;
-  margin-left: 100px;
-  /* Box-model */
-  max-width: 200px;
-  height: 200px;
-  padding: 20px;
-  /* Typography */
-  text-align: left;
-  /* Visual */
-  background-color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  /* Misc */
-}
-
-// contact map
+/*****************************************************************************/
+/*
+/* Contact
+/*
+/*****************************************************************************/
 
 div#dws_contact_page_map {
   height: 500px;
