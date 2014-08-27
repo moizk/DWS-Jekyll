@@ -280,6 +280,101 @@ h3#fourc {
 
 /*****************************************************************************/
 /*
+/* Clients
+/*
+/*****************************************************************************/
+
+
+
+div.clients-page-header {
+  /* Positioning */
+  /* Box-model */
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+  /* Typography */
+  /* Visual */
+  background-color: #ef5e2e;
+  color: #fff;
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    /* Typography */
+    font-size: 60px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */
+  }
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Typography */
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    /* Visual */
+    /* Misc */
+  }
+}
+
+div.client-strip {
+  /* Positioning */
+  /* Box-model */
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+  &:nth-child(even) {
+    background-color: #F4F5F5;
+  }
+  img {
+    height: 500px;
+  }
+  h4 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 50px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    max-width: 500px;
+    /* Typography */
+    font-size: 14px;
+    /* Visual */
+    /* Misc */
+  }
+}
+
+/*****************************************************************************/
+/*
 /* Legacy
 /*
 /*****************************************************************************/
@@ -467,28 +562,6 @@ a {
     &:hover {
       color: #333;
     }
-  }
-}
-
-.btn-follow {
-  /* Positioning */
-  /* Box-model */
-  /* Typography */
-  /* Visual */
-  background-color: rgba(255,255,255,0);
-  border: 1px solid #eee;
-  color: #fff;
-  /* Misc */
-    -webkit-transition: all 400ms ease-in-out;
-       -moz-transition: all 400ms ease-in-out;
-            transition: all 400ms ease-in-out;
-  &:hover {
-    background-color: rgba(255,255,255,1);
-  }
-  &:active, &:focus {
-    background-color: rgba(255,255,255,1);
-    color: #333;
-    outline: none;
   }
 }
 
