@@ -244,6 +244,10 @@ div.about-card {
   /* Typography */
   /* Visual */
   /* Misc */
+  @media screen and (max-width: 320px) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
   div.card-image {
     /* Positioning */
     /* Box-model */
@@ -260,10 +264,10 @@ div.about-card {
   div.card-overlay {
     /* Positioning */
     /* Box-model */
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     position: absolute;
-    margin-top: -350px;
+    margin-top: -320px;
     /* Typography */
     text-align: center;
     /* Visual */
