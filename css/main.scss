@@ -133,7 +133,7 @@ div.about-page-header {
   /* Positioning */
   /* Box-model */
   padding-bottom: 35px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   /* Typography */
   /* Visual */
   background-color: #2f79e7;
@@ -205,6 +205,31 @@ div.countdown-timer {
     font-size: 14px;
     /* Visual */
     /* Misc */
+  }
+}
+
+ul.about-list {
+  /* Positioning */
+  /* Box-model */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* Typography */
+  font-size: 18px;
+  /* Visual */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  /* Misc */
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+    a {
+      color: #08c;
+      text-decoration: none;
+      padding-bottom: 5px;
+      &:hover {
+        border-bottom: 3px solid #ddd;
+      }
+    }
   }
 }
 
