@@ -108,10 +108,10 @@ div.about-page-header {
   /* Positioning */
   /* Box-model */
   padding-bottom: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   /* Typography */
   /* Visual */
-  background-color: #0f4d6b;
+  background-color: #2f79e7;
   color: #fff;
   /* Misc */ }
   div.about-page-header h2 {
@@ -121,7 +121,7 @@ div.about-page-header {
     margin-bottom: 0;
     padding-top: 35px;
     /* Typography */
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
     /* Visual */
     /* Misc */ }
@@ -141,15 +141,61 @@ div.about-page-header {
     /* Positioning */
     /* Box-model */
     margin-top: 25px;
-    max-width: 400px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     /* Typography */
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 23px;
+    font-weight: 100;
     text-align: center;
     /* Visual */
     /* Misc */ }
+
+div.countdown-timer {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  /* Misc */ }
+  div.countdown-timer h1 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 150px;
+    font-weight: 100;
+    font-family: "proxima-nova-condensed",sans-serif;
+    /* Visual */
+    /* Misc */ }
+  div.countdown-timer h4 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    /* Visual */
+    /* Misc */ }
+
+ul.about-list {
+  /* Positioning */
+  /* Box-model */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* Typography */
+  font-size: 18px;
+  /* Visual */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  /* Misc */ }
+  ul.about-list li {
+    padding-left: 10px;
+    padding-right: 10px; }
+    ul.about-list li a {
+      color: #08c;
+      text-decoration: none;
+      padding-bottom: 5px; }
+      ul.about-list li a:hover {
+        border-bottom: 3px solid #ddd; }
 
 div.about-card {
   /* Positioning */
@@ -161,6 +207,9 @@ div.about-card {
   /* Typography */
   /* Visual */
   /* Misc */ }
+  @media screen and (max-width: 320px) {
+    div.about-card {
+      margin: 0; } }
   div.about-card div.card-image {
     /* Positioning */
     /* Box-model */
@@ -173,14 +222,13 @@ div.about-card {
   div.about-card div.card-overlay {
     /* Positioning */
     /* Box-model */
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     position: absolute;
-    margin-top: -350px;
+    margin-top: -320px;
     /* Typography */
     text-align: center;
     /* Visual */
-    background-color: rgba(34, 34, 34, 0.8);
     color: #fff;
     /* Misc */
     -webkit-transition: all 300ms ease-in-out;
@@ -196,8 +244,8 @@ div.about-card {
     div.about-card div.card-overlay h3 {
       /* Positioning */
       /* Box-model */
-      padding-top: 130px;
-      height: 350px;
+      padding-top: 110px;
+      height: 320px;
       width: 100%;
       /* Typography */
       font-family: 'proxima-nova', Helvetica, Arial;
@@ -206,6 +254,7 @@ div.about-card {
       /* Visual */
       font-size: 50px;
       /* Misc */
+      text-shadow: 0px 0px 25px #111;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
@@ -247,7 +296,7 @@ div.clients-page-header {
   margin-bottom: 20px;
   /* Typography */
   /* Visual */
-  background-color: #ef5e2e;
+  background-color: #EA8D4F;
   color: #fff;
   /* Misc */ }
   div.clients-page-header h2 {
@@ -257,7 +306,7 @@ div.clients-page-header {
     margin-bottom: 0;
     padding-top: 35px;
     /* Typography */
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
     /* Visual */
     /* Misc */ }
@@ -277,12 +326,12 @@ div.clients-page-header {
     /* Positioning */
     /* Box-model */
     margin-top: 25px;
-    max-width: 400px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     /* Typography */
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 23px;
+    font-weight: 100;
     text-align: center;
     /* Visual */
     /* Misc */ }
@@ -313,6 +362,32 @@ div.client-strip {
     /* Positioning */
     /* Box-model */
     max-width: 500px;
+    /* Typography */
+    font-size: 14px;
+    /* Visual */
+    /* Misc */ }
+  div.client-strip p.spec {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 12px;
+    /* Visual */
+    /* Misc */ }
+  div.client-strip h5 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 70px;
+    /* Typography */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    /* Visual */
+    /* Misc */ }
+  div.client-strip blockquote {
+    /* Positioning */
+    /* Box-model */
+    max-width: 400px;
     /* Typography */
     font-size: 14px;
     /* Visual */
