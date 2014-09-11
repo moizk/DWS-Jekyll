@@ -180,6 +180,32 @@ div.about-page-header {
   }
 }
 
+div#the-countdown {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  /* Misc */
+  h2#tc-h2 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    /* Visual */
+    font-size: 80px;
+    font-weight: 100;
+    /* Misc */
+  }
+  h3#tc-h3 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 14px;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 div.countdown-timer {
   /* Positioning */
   /* Box-model */
@@ -233,6 +259,10 @@ ul.about-list {
   }
 }
 
+div.about-card-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 div.about-card {
   /* Positioning */
@@ -285,7 +315,7 @@ div.about-card {
       background-color: rgba(47,121,231, 0);
       /* Misc */
     }
-    h3 {
+    h4 {
       /* Positioning */
       /* Box-model */
       padding-top: 110px;
