@@ -260,14 +260,12 @@ ul.about-list {
 }
 
 div.about-card-container {
-  max-width: 1170px;
   margin: 0 auto;
 }
 
 div.about-card {
   /* Positioning */
   /* Box-model */
-  display: inline-block;
   margin-bottom: 25px;
   /* Typography */
   /* Visual */
@@ -278,27 +276,21 @@ div.about-card {
   div.card-image {
     /* Positioning */
     /* Box-model */
-    width: 350px;
+    width: 100%;
     /* Typography */
     /* Visual */
     /* Misc */
     &:hover {
     }
-    img {
-      vertical-align: bottom;
-    }
   }
   div.card-overlay {
     /* Positioning */
     /* Box-model */
-    width: 350px;
-    height: 350px;
     position: absolute;
-    margin-top: -350px;
+    margin-top: -290px;
     /* Typography */
     text-align: center;
     /* Visual */
-
     color: #fff;
     /* Misc */
     -webkit-transition: all 300ms ease-in-out;
@@ -317,7 +309,7 @@ div.about-card {
       /* Positioning */
       /* Box-model */
       padding-top: 135px;
-      height: 350px;
+      height: 100%;
       width: 100%;
       /* Typography */
       font-family: 'proxima-nova', Helvetica, Arial;
@@ -330,7 +322,6 @@ div.about-card {
       -webkit-transition: all .3s ease-in-out;
          -moz-transition: all .3s ease-in-out;
               transition: all .3s ease-in-out;
-
       &:hover {
         text-shadow: 0px 0px 0px #111;
         opacity: 1;
