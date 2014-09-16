@@ -151,6 +151,29 @@ div.about-page-header {
     /* Visual */
     /* Misc */ }
 
+div#the-countdown {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  /* Misc */ }
+  div#the-countdown h2#tc-h2 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    /* Visual */
+    font-size: 80px;
+    font-weight: 100;
+    /* Misc */ }
+  div#the-countdown h3#tc-h3 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 14px;
+    /* Visual */
+    /* Misc */ }
+
 div.countdown-timer {
   /* Positioning */
   /* Box-model */
@@ -197,12 +220,12 @@ ul.about-list {
       ul.about-list li a:hover {
         border-bottom: 3px solid #ddd; }
 
+div.about-card-container {
+  margin: 0 auto; }
+
 div.about-card {
   /* Positioning */
   /* Box-model */
-  display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
   margin-bottom: 25px;
   /* Typography */
   /* Visual */
@@ -213,19 +236,15 @@ div.about-card {
   div.about-card div.card-image {
     /* Positioning */
     /* Box-model */
-    width: 320px;
+    width: 100%;
     /* Typography */
     /* Visual */
     /* Misc */ }
-    div.about-card div.card-image img {
-      vertical-align: bottom; }
   div.about-card div.card-overlay {
     /* Positioning */
     /* Box-model */
-    width: 320px;
-    height: 320px;
     position: absolute;
-    margin-top: -320px;
+    margin-top: -290px;
     /* Typography */
     text-align: center;
     /* Visual */
@@ -239,13 +258,13 @@ div.about-card {
       /* Box-model */
       /* Typography */
       /* Visual */
-      background-color: rgba(47, 121, 231, 0);
+      background-color: rgba(50, 127, 244, 0.9);
       /* Misc */ }
-    div.about-card div.card-overlay h3 {
+    div.about-card div.card-overlay h4 {
       /* Positioning */
       /* Box-model */
-      padding-top: 110px;
-      height: 320px;
+      padding-top: 135px;
+      height: 100%;
       width: 100%;
       /* Typography */
       font-family: 'proxima-nova', Helvetica, Arial;
@@ -254,12 +273,13 @@ div.about-card {
       /* Visual */
       font-size: 50px;
       /* Misc */
-      text-shadow: 0px 0px 25px #111;
+      opacity: 0;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
-      div.about-card div.card-overlay h3:hover {
-        opacity: 0; }
+      div.about-card div.card-overlay h4:hover {
+        text-shadow: 0px 0px 0px #111;
+        opacity: 1; }
 
 div#dws_about_page_map {
   height: 720px; }
@@ -293,7 +313,6 @@ div.clients-page-header {
   /* Positioning */
   /* Box-model */
   padding-bottom: 35px;
-  margin-bottom: 20px;
   /* Typography */
   /* Visual */
   background-color: #EA8D4F;
@@ -336,18 +355,55 @@ div.clients-page-header {
     /* Visual */
     /* Misc */ }
 
+div.bb-strip {
+  /* Positioning */
+  /* Box-model */
+  padding-top: 0px;
+  /* Typography */
+  /* Visual */
+  background-color: #fff;
+  /* Misc */ }
+  div.bb-strip img.big {
+    /* Positioning */
+    /* Box-model */
+    width: 100%;
+    /* Typography */
+    /* Visual */
+    /* Misc */ }
+  div.bb-strip h2 {
+    /* Positioning */
+    /* Box-model */
+    padding-bottom: 50px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */ }
+  div.bb-strip div.copy {
+    max-width: 500px;
+    margin: 0 auto; }
+
+div.runa-strip {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #fff;
+  /* Misc */ }
+  div.runa-strip div.copy {
+    max-width: 500px; }
+
 div.client-strip {
   /* Positioning */
   /* Box-model */
   padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 50px;
+  padding-bottom: 100px;
   /* Typography */
   /* Visual */
   /* Misc */ }
-  div.client-strip:nth-child(even) {
-    background-color: #F4F5F5; }
-  div.client-strip img {
+  div.client-strip div.copy {
+    max-width: 500px; }
+  div.client-strip img.resized {
     height: 500px; }
   div.client-strip h4 {
     /* Positioning */
@@ -361,9 +417,11 @@ div.client-strip {
   div.client-strip p {
     /* Positioning */
     /* Box-model */
-    max-width: 500px;
+    margin: 0 auto;
     /* Typography */
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
     /* Visual */
     /* Misc */ }
   div.client-strip p.spec {
@@ -373,10 +431,22 @@ div.client-strip {
     font-size: 12px;
     /* Visual */
     /* Misc */ }
+  div.client-strip p.pull-quote {
+    /* Positioning */
+    /* Box-model */
+    max-width: 280px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.4;
+    /* Visual */
+    border-bottom: 3px solid #bbb;
+    /* Misc */ }
   div.client-strip h5 {
     /* Positioning */
     /* Box-model */
-    margin-top: 70px;
+    margin-top: 35px;
     /* Typography */
     font-weight: 700;
     text-transform: uppercase;
@@ -387,7 +457,6 @@ div.client-strip {
   div.client-strip blockquote {
     /* Positioning */
     /* Box-model */
-    max-width: 400px;
     /* Typography */
     font-size: 14px;
     /* Visual */

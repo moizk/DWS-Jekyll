@@ -26,7 +26,7 @@
     </head>
     <body>
 
-        <div class="">
+        <div class="dws-website">
           <nav class="top-navigation">
             <div class="container">
               <a href="index.html">
@@ -37,12 +37,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="clients.html">Clients</a></li>
-                <li><a href="#">Printing</a></li>
-                <li><a href="#">Design</a></li>
+                <li><a href="printing.html">Printing</a></li>
+                <li><a href="design.html">Design</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </nav>
+          <div class="clearfix"></div>
           <div class="about-page-header text-center">
   <h2>About</h2>
   <h3>Est. 1865</h3>
@@ -50,8 +51,10 @@
   <p>We are the last step in the visions of a lot of passionate people. We take an anonymous container and provide its story. We become a part of so many stories in what we do. It’s what makes our story so vibrant.</p>
 </div>
 
-<h2 id="the-worst" class="text-center">150 Years</h2>
-<h3 id="fourc">The Final Countdown!</h3>
+<div id="the-countdown">
+  <h2 id="tc-h2">150 Years</h2>
+  <h3 id="tc-h3">We've been in business for nearly 150 years!</h3>
+</div>
 
 <div class="container text-center">
   <hr>
@@ -75,86 +78,92 @@
   </div>
 </div>
 
-<br><br><br><br>
 
 <div class="container">
   <ul class="list-unstyled list-inline text-center about-list">
-    <li><a href="#">Story</a></li>
-    <li><a href="#">Team</a></li>
-    <li><a href="#">Legacy</a></li>
-    <li><a href="#">Clients</a></li>
-    <li><a href="#">Printing</a></li>
-    <li><a href="#">Design</a></li>
+    <li><a href="story.html">Story</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="legacy.html">Legacy</a></li>
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="printing.html">Printing</a></li>
+    <li><a href="design.html">Design</a></li>
   </ul>
-</div>
-
-<br><br><br><br>
-
-<div class="container">
-  <a href="story.html">
-    <div class="about-card">
-      <div class="card-image">
-        <img src="img/about/story.png" class="img-responsive">
-      </div>
-      <div class="card-overlay">
-        <h3>Story</h3>
-        <p></p>
-      </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="story.html">
+        <div class="about-card">
+          <div class="card-image">
+            <img src="img/about/story.png" class="img-responsive">
+          </div>
+          <div class="card-overlay">
+            <h4>Story</h4>
+          </div>
+        </div>
+      </a>
     </div>
-  </a>
-  <a href="team.html">
-    <div class="about-card">
-      <div class="card-image">
-        <img src="img/about/team.jpg" class="img-responsive">
-      </div>
-      <div class="card-overlay">
-        <h3>Team</h3>
-      </div>
+    <div class="col-md-4">
+      <a href="team.html">
+        <div class="about-card">
+          <div class="card-image">
+            <img src="img/about/team.jpg" class="img-responsive">
+          </div>
+          <div class="card-overlay">
+            <h4>Team</h4>
+          </div>
+        </div>
+      </a>
     </div>
-  </a>
-
-  <a href="legacy.html">
-    <div class="about-card">
-      <div class="card-image">
-        <img src="img/about/sustain.jpg" class="img-responsive">
-      </div>
-      <div class="card-overlay">
-        <h3>Legacy</h3>
-      </div>
-    </div>
-  </a>
-
-  <a href="clients.html">
-  <div class="about-card">
-    <div class="card-image">
-      <img src="img/about/clients.jpg" class="img-responsive">
-    </div>
-    <div class="card-overlay">
-      <h3>Clients</h3>
+    <div class="col-md-4">
+      <a href="legacy.html">
+        <div class="about-card">
+          <div class="card-image">
+            <img src="img/about/sustain.jpg" class="img-responsive">
+          </div>
+          <div class="card-overlay">
+            <h4>Legacy</h4>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
-
-  <a href="pritning.html">
-    <div class="about-card">
-      <div class="card-image">
-        <img src="img/about/printing.jpg" class="img-responsive">
-      </div>
-      <div class="card-overlay">
-        <h3>Printing</h3>
-      </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="clients.html">
+        <div class="about-card">
+          <div class="card-image">
+            <img src="img/about/clients.jpg" class="img-responsive">
+          </div>
+          <div class="card-overlay">
+            <h4>Clients</h4>
+          </div>
+        </div>
+      </a>
     </div>
-  </a>
-
-  <a href="design.html">
-    <div class="about-card">
-      <div class="card-image">
-        <img src="img/about/design.jpg" class="img-responsive">
-      </div>
-      <div class="card-overlay">
-        <h3>Design</h3>
-      </div>
+    <div class="col-md-4">
+      <a href="printing.html">
+        <div class="about-card">
+          <div class="card-image">
+            <img src="img/about/printing.jpg" class="img-responsive">
+          </div>
+          <div class="card-overlay">
+            <h4>Printing</h4>
+          </div>
+        </div>
+      </a>
     </div>
-  </a>
+    <div class="col-md-4">
+      <a href="design.html">
+        <div class="about-card">
+          <div class="card-image">
+            <img src="img/about/design.jpg" class="img-responsive">
+          </div>
+          <div class="card-overlay">
+            <h4>Design</h4>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
 <br>
 <h2 id="the-worst" class="text-center">Our Reach</h2>
@@ -173,8 +182,8 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="clients.html">Clients</a></li>
-              <li><a href="#">Printing</a></li>
-              <li><a href="#">Design</a></li>
+              <li><a href="printing.html">Printing</a></li>
+              <li><a href="design.html">Design</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
