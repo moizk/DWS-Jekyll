@@ -420,10 +420,19 @@ div.bb-strip {
   /* Positioning */
   /* Box-model */
   padding-top: 0px;
+  padding-bottom: 0 !important;
   /* Typography */
   /* Visual */
   background-color: #fff;
   /* Misc */
+  div.centerable-row {
+    /* Positioning */
+    /* Box-model */
+    margin: 0 auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+  }
   img.big {
     /* Positioning */
     /* Box-model */
@@ -542,6 +551,21 @@ div.client-strip {
     /* Misc */
   }
 }
+
+  p.pull-quote-long {
+    /* Positioning */
+    /* Box-model */
+    max-width: 500px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.4;
+    /* Visual */
+    /* Misc */
+  }
 
 /*****************************************************************************/
 /*
