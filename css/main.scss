@@ -698,6 +698,57 @@ div.design-page-header {
 /*
 /*****************************************************************************/
 
+div.contact-page-header {
+  /* Positioning */
+  /* Box-model */
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+  /* Typography */
+  /* Visual */
+  background-color: #39b86f;
+  color: #fff;
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */
+  }
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Typography */
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 div#dws_contact_page_map {
   height: 500px;
 }
