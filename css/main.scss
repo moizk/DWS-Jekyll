@@ -24,28 +24,26 @@ div#bgvid {
     /* Positioning */
     position: absolute;
     /* Box-model */
-    margin-top: -800px;
+    margin-top: -1000px;
     margin-left: auto;
     margin-right: auto;
     width: 99%;
     /* Typography */
     text-align: center;
     /* Visual */
+    color: #fff;
     /* Misc */
-    h1 {
+    h2 {
       /* Positioning */
       /* Box-model */
+      margin-top: 0;
+      padding-top: 200px;
       /* Typography */
       text-align: center;
-      /* Visual */
-      color: #fff;
-      /* Misc */
-    }
-    .button {
-      /* Positioning */
-      /* Box-model */
-      /* Typography */
-      text-align: center;
+      font-size: 62px;
+      line-height: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
       /* Visual */
       /* Misc */
     }
@@ -182,11 +180,36 @@ div.about-page-header {
 div.story-strip {
   /* Positioning */
   /* Box-model */
-  height: 500px;
   /* Typography */
   /* Visual */
-  background-color: #000;
   /* Misc */
+}
+
+div.story-content {
+  max-width: 80%;
+  margin: 0 auto;
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: 'kepler-std', serif;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 1.5;
+    /* Visual */
+    /* Misc */
+  }
 }
 
 div.team-strip {
@@ -232,26 +255,77 @@ div.countdown-timer {
   /* Box-model */
   /* Typography */
   /* Visual */
+  background-color: #2f79e7;
+  color: #333;
   /* Misc */
-  h1 {
+  h3 {
     /* Positioning */
     /* Box-model */
-    /* Typography */
-    font-size: 150px;
-    font-weight: 100;
-    font-family: "proxima-nova-condensed",sans-serif;
-    /* Visual */
-    /* Misc */
-  }
-  h4 {
-    /* Positioning */
-    /* Box-model */
+    margin: 60px 0 60px 0;
     /* Typography */
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 40px;
     /* Visual */
+    color: #fff;
     /* Misc */
+    span {
+      color: #000;
+    }
+  }
+}
+
+div.weare {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #2f79e7;
+  color: #333;
+  text-align: center;
+  /* Misc */
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    margin: 0;
+    padding: 60px 0 60px 0;
+    /* Typography */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    /* Visual */
+    color: #fff;
+    /* Misc */
+    span {
+      color: #000;
+    }
+  }
+}
+
+div.reach-header {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #2f79e7;
+  color: #333;
+  text-align: center;
+  /* Misc */
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    margin: 0;
+    padding: 60px 0 60px 0;
+    /* Typography */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    /* Visual */
+    color: #fff;
+    /* Misc */
+    span {
+      color: #000;
+    }
   }
 }
 
