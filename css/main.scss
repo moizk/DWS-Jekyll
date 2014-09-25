@@ -691,7 +691,6 @@ div.design-page-header {
   /* Positioning */
   /* Box-model */
   padding-bottom: 35px;
-  margin-bottom: 50px;
   /* Typography */
   /* Visual */
   background-color: #39b86f;
@@ -736,6 +735,47 @@ div.design-page-header {
     /* Visual */
     /* Misc */
   }
+}
+
+div.owen-content {
+  /* Positioning */
+  /* Box-model */
+  max-width: 80%;
+  margin: 0 auto;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 34px;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: 'kepler-std', serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    /* Visual */
+    /* Misc */
+  }
+}
+
+div.design-images {
+  /* Positioning */
+  /* Box-model */
+  height: 1000px;
+  /* Typography */
+  /* Visual */
+  background-color: #5cb8e6;
+  /* Misc */
 }
 
 
