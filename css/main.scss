@@ -192,11 +192,28 @@ div.story-strip {
 div.team-strip {
   /* Positioning */
   /* Box-model */
-  height: 500px;
+  height: 1080px;
   /* Typography */
   /* Visual */
   background-color: #000;
+  background-image: url(/img/about/team-big.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
   /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 100px;
+    /* Typography */
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    /* Visual */
+    /* Misc */
+  }
 }
 
 div.legacy-strip {
