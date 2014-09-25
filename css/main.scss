@@ -192,12 +192,11 @@ div.story-strip {
 div.team-strip {
   /* Positioning */
   /* Box-model */
-  height: 1080px;
+  height: 720px;
   /* Typography */
   /* Visual */
   background-color: #000;
   background-image: url(/img/about/team-big.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -206,11 +205,13 @@ div.team-strip {
     /* Positioning */
     /* Box-model */
     margin-top: 0;
-    padding-top: 100px;
+    padding-top: 200px;
     /* Typography */
     text-align: center;
-    font-size: 100px;
+    font-size: 62px;
+    line-height: 55px;
     font-weight: 600;
+    text-transform: uppercase;
     /* Visual */
     /* Misc */
   }
@@ -751,7 +752,8 @@ div.owen-content {
     padding-top: 25px;
     padding-bottom: 25px;
     /* Typography */
-    font-size: 34px;
+    font-size: 50px;
+    font-weight: 300;
     /* Visual */
     /* Misc */
   }
@@ -1042,4 +1044,34 @@ a {
 .btn-square {
   height: 100px;
   width: 100px;
+}
+
+.btn-transparent {
+  /* Positioning */
+  /* Box-model */
+  border: 3px solid #fff;
+  /* Typography */
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  /* Misc */
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+  &:hover {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
+    /* Visual */
+    /* Misc */
+  }
 }
