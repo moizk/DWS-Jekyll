@@ -18,27 +18,26 @@ div#bgvid {
     /* Positioning */
     position: absolute;
     /* Box-model */
-    margin-top: -800px;
+    margin-top: -1000px;
     margin-left: auto;
     margin-right: auto;
     width: 99%;
     /* Typography */
     text-align: center;
     /* Visual */
+    color: #fff;
     /* Misc */ }
-    div#bgvid div.call-to-action-message h1 {
+    div#bgvid div.call-to-action-message h2 {
       /* Positioning */
       /* Box-model */
+      margin-top: 0;
+      padding-top: 200px;
       /* Typography */
       text-align: center;
-      /* Visual */
-      color: #fff;
-      /* Misc */ }
-    div#bgvid div.call-to-action-message .button {
-      /* Positioning */
-      /* Box-model */
-      /* Typography */
-      text-align: center;
+      font-size: 62px;
+      line-height: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
       /* Visual */
       /* Misc */ }
 
@@ -108,7 +107,6 @@ div.about-page-header {
   /* Positioning */
   /* Box-model */
   padding-bottom: 35px;
-  margin-bottom: 50px;
   /* Typography */
   /* Visual */
   background-color: #2f79e7;
@@ -151,158 +149,165 @@ div.about-page-header {
     /* Visual */
     /* Misc */ }
 
-div#the-countdown {
+div.story-strip {
   /* Positioning */
   /* Box-model */
   /* Typography */
-  text-align: center;
   /* Visual */
   /* Misc */ }
-  div#the-countdown h2#tc-h2 {
+
+div.story-content {
+  max-width: 80%;
+  margin: 0 auto; }
+  div.story-content h3 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */ }
+  div.story-content p {
     /* Positioning */
     /* Box-model */
     /* Typography */
-    /* Visual */
-    font-size: 80px;
+    font-family: 'kepler-std', serif;
+    font-size: 32px;
     font-weight: 100;
-    /* Misc */ }
-  div#the-countdown h3#tc-h3 {
-    /* Positioning */
-    /* Box-model */
-    /* Typography */
-    font-size: 14px;
+    line-height: 1.5;
     /* Visual */
     /* Misc */ }
+
+div.team-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 720px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  background-image: url(/img/about/team-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* Misc */ }
+  div.team-strip h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+
+div.legacy-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 500px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  /* Misc */ }
 
 div.countdown-timer {
   /* Positioning */
   /* Box-model */
   /* Typography */
   /* Visual */
+  background-color: #2f79e7;
+  color: #333;
   /* Misc */ }
-  div.countdown-timer h1 {
+  div.countdown-timer h3 {
     /* Positioning */
     /* Box-model */
-    /* Typography */
-    font-size: 150px;
-    font-weight: 100;
-    font-family: "proxima-nova-condensed",sans-serif;
-    /* Visual */
-    /* Misc */ }
-  div.countdown-timer h4 {
-    /* Positioning */
-    /* Box-model */
+    margin: 60px 0 60px 0;
     /* Typography */
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 14px;
-    /* Visual */
-    /* Misc */ }
-
-ul.about-list {
-  /* Positioning */
-  /* Box-model */
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /* Typography */
-  font-size: 18px;
-  /* Visual */
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  /* Misc */ }
-  ul.about-list li {
-    padding-left: 10px;
-    padding-right: 10px; }
-    ul.about-list li a {
-      color: #08c;
-      text-decoration: none;
-      padding-bottom: 5px; }
-      ul.about-list li a:hover {
-        border-bottom: 3px solid #ddd; }
-
-div.about-card-container {
-  margin: 0 auto; }
-
-div.about-card {
-  /* Positioning */
-  /* Box-model */
-  margin-bottom: 25px;
-  /* Typography */
-  /* Visual */
-  /* Misc */ }
-  @media screen and (max-width: 320px) {
-    div.about-card {
-      margin: 0; } }
-  div.about-card div.card-image {
-    /* Positioning */
-    /* Box-model */
-    width: 100%;
-    /* Typography */
-    /* Visual */
-    /* Misc */ }
-  div.about-card div.card-overlay {
-    /* Positioning */
-    /* Box-model */
-    position: absolute;
-    margin-top: -290px;
-    /* Typography */
-    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
     /* Visual */
     color: #fff;
-    /* Misc */
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out; }
-    div.about-card div.card-overlay:hover {
-      /* Positioning */
-      /* Box-model */
-      /* Typography */
-      /* Visual */
-      background-color: rgba(50, 127, 244, 0.9);
-      /* Misc */ }
-    div.about-card div.card-overlay h4 {
-      /* Positioning */
-      /* Box-model */
-      padding-top: 135px;
-      height: 100%;
-      width: 100%;
-      /* Typography */
-      font-family: 'proxima-nova', Helvetica, Arial;
-      font-weight: 800;
-      text-transform: uppercase;
-      /* Visual */
-      font-size: 50px;
-      /* Misc */
-      opacity: 0;
-      -webkit-transition: all .3s ease-in-out;
-      -moz-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
-      div.about-card div.card-overlay h4:hover {
-        text-shadow: 0px 0px 0px #111;
-        opacity: 1; }
+    /* Misc */ }
+    div.countdown-timer h3 span {
+      color: #000; }
+
+div.weare {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #2f79e7;
+  color: #333;
+  text-align: center;
+  /* Misc */ }
+  div.weare h3 {
+    /* Positioning */
+    /* Box-model */
+    margin: 0;
+    padding: 60px 0 60px 0;
+    /* Typography */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    /* Visual */
+    color: #fff;
+    /* Misc */ }
+    div.weare h3 span {
+      color: #000; }
+
+div.reach-header {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #2f79e7;
+  color: #333;
+  text-align: center;
+  /* Misc */ }
+  div.reach-header h3 {
+    /* Positioning */
+    /* Box-model */
+    margin: 0;
+    padding: 60px 0 60px 0;
+    /* Typography */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    /* Visual */
+    color: #fff;
+    /* Misc */ }
+    div.reach-header h3 span {
+      color: #000; }
 
 div#dws_about_page_map {
   height: 720px; }
 
-h2#the-worst {
-  /* Positioning */
-  /* Box-model */
-  margin-bottom: 40px;
-  /* Typography */
-  font-size: 50px;
-  font-weight: 300;
-  /* Visual */
-  /* Misc */ }
-
-h3#fourc {
-  /* Positioning */
-  /* Box-model */
-  margin-bottom: 30px;
-  /* Typography */
-  font-weight: 300;
-  text-align: center;
-  /* Visual */
-  /* Misc */ }
+div.about-page-sub-header {
+  text-align: center; }
+  div.about-page-sub-header h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-bottom: 40px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */ }
+  div.about-page-sub-header h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-bottom: 30px;
+    /* Typography */
+    font-weight: 300;
+    text-align: center;
+    /* Visual */
+    /* Misc */ }
 
 /*****************************************************************************/
 /*
@@ -355,18 +360,27 @@ div.clients-page-header {
     /* Visual */
     /* Misc */ }
 
+img.big {
+  /* Positioning */
+  /* Box-model */
+  width: 100%;
+  /* Typography */
+  /* Visual */
+  /* Misc */ }
+
 div.bb-strip {
   /* Positioning */
   /* Box-model */
   padding-top: 0px;
+  padding-bottom: 0 !important;
   /* Typography */
   /* Visual */
   background-color: #fff;
   /* Misc */ }
-  div.bb-strip img.big {
+  div.bb-strip div.centerable-row {
     /* Positioning */
     /* Box-model */
-    width: 100%;
+    margin: 0 auto;
     /* Typography */
     /* Visual */
     /* Misc */ }
@@ -396,11 +410,12 @@ div.runa-strip {
 div.client-strip {
   /* Positioning */
   /* Box-model */
-  padding-top: 25px;
   padding-bottom: 100px;
   /* Typography */
   /* Visual */
   /* Misc */ }
+  div.client-strip hr {
+    max-width: 85%; }
   div.client-strip div.copy {
     max-width: 500px; }
   div.client-strip img.resized {
@@ -435,6 +450,8 @@ div.client-strip {
     /* Positioning */
     /* Box-model */
     max-width: 280px;
+    padding-top: 15px;
+    margin-bottom: 15px;
     padding-bottom: 25px;
     /* Typography */
     font-size: 30px;
@@ -461,6 +478,20 @@ div.client-strip {
     font-size: 14px;
     /* Visual */
     /* Misc */ }
+
+p.pull-quote-long {
+  /* Positioning */
+  /* Box-model */
+  max-width: 500px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+  /* Typography */
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1.4;
+  /* Visual */
+  /* Misc */ }
 
 /*****************************************************************************/
 /*
@@ -581,9 +612,196 @@ div.minimal-story-container {
 
 /*****************************************************************************/
 /*
+/* Printing
+/*
+/*****************************************************************************/
+div.printing-page-header {
+  /* Positioning */
+  /* Box-model */
+  padding-bottom: 35px;
+  /* Typography */
+  /* Visual */
+  background-color: #795aac;
+  color: #fff;
+  /* Misc */ }
+  div.printing-page-header h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */ }
+  div.printing-page-header h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+  div.printing-page-header p {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Typography */
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    /* Visual */
+    /* Misc */ }
+
+/*****************************************************************************/
+/*
+/* Design
+/*
+/*****************************************************************************/
+div.design-page-header {
+  /* Positioning */
+  /* Box-model */
+  padding-bottom: 35px;
+  /* Typography */
+  /* Visual */
+  background-color: #39b86f;
+  color: #fff;
+  /* Misc */ }
+  div.design-page-header h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */ }
+  div.design-page-header h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+  div.design-page-header p {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Typography */
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    /* Visual */
+    /* Misc */ }
+
+div.owen-content {
+  /* Positioning */
+  /* Box-model */
+  max-width: 80%;
+  margin: 0 auto;
+  /* Typography */
+  /* Visual */
+  /* Misc */ }
+  div.owen-content h3 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */ }
+  div.owen-content p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: 'kepler-std', serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    /* Visual */
+    /* Misc */ }
+
+div.design-images {
+  /* Positioning */
+  /* Box-model */
+  height: 1000px;
+  /* Typography */
+  /* Visual */
+  background-color: #5cb8e6;
+  /* Misc */ }
+
+/*****************************************************************************/
+/*
 /* Contact
 /*
 /*****************************************************************************/
+div.contact-page-header {
+  /* Positioning */
+  /* Box-model */
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+  /* Typography */
+  /* Visual */
+  background-color: #39b86f;
+  color: #fff;
+  /* Misc */ }
+  div.contact-page-header h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */ }
+  div.contact-page-header h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+  div.contact-page-header p {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Typography */
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    /* Visual */
+    /* Misc */ }
+
 div#dws_contact_page_map {
   height: 500px; }
 
@@ -760,3 +978,30 @@ a {
 .btn-square {
   height: 100px;
   width: 100px; }
+
+.btn-transparent {
+  /* Positioning */
+  /* Box-model */
+  border: 3px solid #fff;
+  /* Typography */
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  /* Misc */
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+  .btn-transparent:hover {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    background-color: white;
+    color: #333;
+    /* Visual */
+    /* Misc */ }
