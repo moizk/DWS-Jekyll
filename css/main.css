@@ -62,13 +62,16 @@ nav.top-navigation {
       /* Box-model */
       /* Typography */
       line-height: 70px;
-      font-family: "proxima-nova", Helvetica, Arial, sans-serif;
-      font-weight: bold;
+      font-family: "proxima-nova", 'Helvetica Neue' , Arial, sans-serif;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: 300;
       /* Visual */
-      color: #333;
-      /* Misc */ }
+      color: #808080;
+      /* Misc */
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
       nav.top-navigation ul li a:hover {
         /* Positioning */
         /* Box-model */
@@ -109,8 +112,8 @@ div.about-page-header {
   padding-bottom: 35px;
   /* Typography */
   /* Visual */
-  background-color: #2f79e7;
-  color: #fff;
+  background-color: #f2f3f5;
+  color: #333;
   /* Misc */ }
   div.about-page-header h2 {
     /* Positioning */
@@ -166,7 +169,7 @@ div.story-content {
     padding-bottom: 25px;
     /* Typography */
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 100;
     /* Visual */
     /* Misc */ }
   div.story-content p {
@@ -174,7 +177,7 @@ div.story-content {
     /* Box-model */
     /* Typography */
     font-family: 'kepler-std', serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 100;
     line-height: 1.5;
     /* Visual */
@@ -320,8 +323,8 @@ div.clients-page-header {
   padding-bottom: 35px;
   /* Typography */
   /* Visual */
-  background-color: #EA8D4F;
-  color: #fff;
+  background-color: #f2f3f5;
+  color: #333;
   /* Misc */ }
   div.clients-page-header h2 {
     /* Positioning */
@@ -621,8 +624,8 @@ div.printing-page-header {
   padding-bottom: 35px;
   /* Typography */
   /* Visual */
-  background-color: #795aac;
-  color: #fff;
+  background-color: #f2f3f5;
+  color: #333;
   /* Misc */ }
   div.printing-page-header h2 {
     /* Positioning */
@@ -672,8 +675,8 @@ div.design-page-header {
   padding-bottom: 35px;
   /* Typography */
   /* Visual */
-  background-color: #39b86f;
-  color: #fff;
+  background-color: #f2f3f5;
+  color: #333;
   /* Misc */ }
   div.design-page-header h2 {
     /* Positioning */
@@ -762,8 +765,8 @@ div.contact-page-header {
   margin-bottom: 50px;
   /* Typography */
   /* Visual */
-  background-color: #39b86f;
-  color: #fff;
+  background-color: #f2f3f5;
+  color: #333;
   /* Misc */ }
   div.contact-page-header h2 {
     /* Positioning */
