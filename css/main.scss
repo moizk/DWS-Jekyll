@@ -831,7 +831,7 @@ div.owen-content {
     padding-bottom: 25px;
     /* Typography */
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 100;
     /* Visual */
     /* Misc */
   }
@@ -848,13 +848,88 @@ div.owen-content {
   }
 }
 
+/* General grid styles */
+.cbp-ig-grid {
+  list-style: none;
+  padding: 15px 0 15px 0;
+  margin: 0;
+}
+
+/* Clear floats */
+.cbp-ig-grid:before,
+.cbp-ig-grid:after {
+  content: " ";
+  display: table;
+}
+
+.cbp-ig-grid:after {
+  clear: both;
+}
+
+/* grid item */
+.cbp-ig-grid li {
+  width: 50%;
+  float: left;
+  height: 420px;
+  text-align: center;
+}
+
+li#rasta {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url(/img/design/label-rasta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* Misc */
+}
+
+li#melon {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url(/img/design/label-melon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Misc */
+}
+
+li#stag {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url(/img/design/label-stag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Misc */
+}
+
+li#old {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url(/img/design/label-old.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Misc */
+}
+
+
+
 div.design-images {
   /* Positioning */
   /* Box-model */
-  height: 1000px;
   /* Typography */
   /* Visual */
-  background-color: #5cb8e6;
+  // background-color: #5cb8e6;
   /* Misc */
 }
 
