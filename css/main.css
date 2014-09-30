@@ -451,7 +451,7 @@ div.client-strip {
   div.client-strip p.pull-quote {
     /* Positioning */
     /* Box-model */
-    max-width: 280px;
+    max-width: 300px;
     padding-top: 15px;
     margin-bottom: 15px;
     padding-bottom: 25px;
@@ -812,9 +812,27 @@ li#old {
 div.design-images {
   /* Positioning */
   /* Box-model */
+  height: 845px;
   /* Typography */
   /* Visual */
+  background-image: url(/img/design/label-all.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
   /* Misc */ }
+  div.design-images h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
 
 /*****************************************************************************/
 /*
