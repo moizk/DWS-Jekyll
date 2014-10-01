@@ -177,6 +177,28 @@ div.story-content {
     font-weight: 100;
     /* Visual */
     /* Misc */ }
+  div.story-content h3.smaller-nudge {
+    /* Positioning */
+    /* Box-model */
+    padding-bottom: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */ }
+  div.story-content h4 {
+    /* Positioning */
+    /* Box-model */
+    display: inline-block;
+    margin: 0 auto 15px auto;
+    padding: 15px;
+    /* Typography */
+    font-weight: 300;
+    /* Visual */
+    text-align: center;
+    border: 1px solid #363636;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    /* Misc */ }
   div.story-content p {
     /* Positioning */
     /* Box-model */
@@ -209,6 +231,10 @@ div.legacy-content {
     font-weight: 100;
     /* Visual */
     /* Misc */ }
+    div.legacy-content h3 span {
+      font-size: 45px;
+      margin-top: 0;
+      line-height: 0px; }
   div.legacy-content p {
     /* Positioning */
     /* Box-model */
@@ -420,7 +446,6 @@ div.bb-strip {
   /* Positioning */
   /* Box-model */
   padding-top: 0px;
-  padding-bottom: 0 !important;
   /* Typography */
   /* Visual */
   background-color: #fff;
@@ -617,6 +642,28 @@ div.team-page {
     /* Visual */
     /* Misc */ }
 
+p.team-bio {
+  /* Positioning */
+  position: absolute;
+  /* Box-model */
+  padding: 20px;
+  margin-top: -555px;
+  height: 555px;
+  width: 95%;
+  /* Typography */
+  font-size: 14px;
+  text-align: left;
+  /* Visual */
+  background-color: rgba(17, 17, 17, 0.9);
+  color: #fff;
+  /* Misc */
+  opacity: 0;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out; }
+  p.team-bio:hover {
+    opacity: 1; }
+
 /*****************************************************************************/
 /*
 /* Footer
@@ -624,6 +671,20 @@ div.team-page {
 /*****************************************************************************/
 div.footer {
   padding-top: 50px; }
+  div.footer h5 {
+    /* Positioning */
+    /* Box-model */
+    margin: 0;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* Visual */
+    color: #333;
+    /* Misc */ }
 
 /*****************************************************************************/
 /*
@@ -786,6 +847,32 @@ div.big-big-strip {
   color: #fff;
   /* Misc */ }
   div.big-big-strip h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+
+div.another-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 720px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  background-image: url(/img/printing/another-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* Misc */ }
+  div.another-strip h2 {
     /* Positioning */
     /* Box-model */
     margin-top: 0;
@@ -1069,6 +1156,13 @@ div.contact-strip {
     color: #777;
     /* Visual */
     /* Misc */ }
+    div.contact-strip h5 small {
+      /* Positioning */
+      /* Box-model */
+      /* Typography */
+      font-size: 12px;
+      /* Visual */
+      /* Misc */ }
   div.contact-strip h6 {
     /* Positioning */
     /* Box-model */
@@ -1136,9 +1230,14 @@ a {
   background: linear-gradient(white, #f7f9fb) #f7f9fb;
   border: 1px solid #d4dce4;
   color: #333;
-  /* Misc */ }
+  /* Misc */
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
   .btn-white:hover {
-    color: #333; }
+    background: #2f79e7;
+    border: 1px solid #2f79e7;
+    color: #fff; }
   .btn-white:active, .btn-white:focus {
     color: #333;
     outline: none !important; }
