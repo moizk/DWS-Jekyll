@@ -12,10 +12,129 @@ function contactInitialize() {
     zoom: 10,
     center: dwsCenter,
     scrollwheel: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [
+
+        // WATER
+
+        {
+          featureType: 'water',
+          elementType: 'geometry',
+          stylers: [{
+            color: '#a2daf2'
+          }]
+        },
+
+        // LANDSCAPE
+
+        {
+          featureType: 'landscape.man_made',
+          elementType: 'geometry',
+          stylers: [{
+            color: '#f7f1df'
+          }]
+        },
+
+        {
+          featureType: 'landscape.natural',
+          elementType: 'geometry',
+          stylers: [{
+            color: '#d0e3b4'
+          }]
+        },
+
+        {
+          featureType: 'landscape.natural.terrain',
+          elementType: 'geometry',
+          stylers: [{
+            visibility: 'off'
+          }]
+        },
+
+        // POINTS OF INTEREST
+
+        {
+          featureType: 'poi.park',
+          elementType: 'geometry',
+          stylers: [{
+            color: '#bde6ab'
+          }]
+        },
+
+        {
+          featureType: 'poi.medical',
+          elementType: 'geometry',
+          stylers: [{
+            color: '#fbd3da'
+          }]
+        },
+
+        {
+          featureType: 'poi.business',
+          stylers: [{
+            visibility: 'off'
+          }]
+        },
+
+        // ROADS
+
+        {
+          featureType: 'road.highway',
+          elementType: 'geometry.fill',
+          stylers: [{
+            color: '#f1e577'
+          }]
+        },
+
+
+        {
+          featureType: 'road.highway',
+          elementType: 'geometry.stroke',
+          stylers: [{
+            color: '#efd151'
+          }]
+        },
+
+        {
+          featureType: 'road.highway.controlled_access',
+          elementType: 'labels.text',
+          stylers: [{
+            visibility: 'off'
+          }]
+        },
+
+        {
+          featureType: 'road.arterial',
+          elementType: 'geometry.fill',
+          stylers: [{
+            color: '#ffffff'
+          }]
+        },
+
+        {
+          featureType: 'road.local',
+          elementType: 'geometry.fill',
+          stylers: [{
+            color: 'black'
+          }]
+        },
+
+        // TRANSIT
+
+        {
+          featureType: 'transit.station.airport',
+          elementType: 'geometry.fill',
+          stylers: [{
+            color: '#cfb2db'
+          }]
+        }
+
+      ]
 
   };
 
+
+  officePin = new google.maps.MarkerImage("http://nooklyn-files.s3.amazonaws.com/map/thirdpin.png", new google.maps.Size(32, 32), new google.maps.Point(0, 0), new google.maps.Point(16, 32));
   contactMap = new google.maps.Map(document.getElementById('dws_contact_page_map'),
       mapOptions);
 
@@ -35,6 +154,7 @@ function contactInitialize() {
 
   var mainOffice = new google.maps.Marker({
     position: dwsOffice,
+    icon: officePin,
     map: contactMap,
     title: 'DWS Office'
   });
