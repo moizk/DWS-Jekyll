@@ -226,14 +226,18 @@ div.legacy-content {
   max-width: 80%;
   padding-top: 20px;
   margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
   div.col-md-6 {
     padding: 0;
   }
   h3 {
     /* Positioning */
     /* Box-model */
+    margin-top: 0;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     /* Typography */
     font-size: 50px;
     font-weight: 100;
@@ -285,11 +289,18 @@ div.team-strip {
 div.legacy-strip {
   /* Positioning */
   /* Box-model */
-  height: 500px;
+  min-height: 650px;
+  width: 50%;
   /* Typography */
   /* Visual */
-  background-color: #000;
+  background-image: url(/img/about/legacy-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   /* Misc */
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 div.countdown-timer {
@@ -812,6 +823,90 @@ div.printing-page-header {
   }
 }
 
+div.printing-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 720px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  background-image: url(/img/printing/printing-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+}
+
+div.flexo-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 720px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  background-image: url(/img/printing/flexo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+}
+
+div.big-big-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 720px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  background-image: url(/img/printing/big-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+  }
+}
+
 /*****************************************************************************/
 /*
 /* Design
@@ -1078,7 +1173,7 @@ div.contact-strip {
   /* Typography */
   text-align: center;
   /* Visual */
-  background-color: #f2f3f5;
+  background-color: #f2f2f2;
   /* Misc */
   h3 {
   /* Positioning */
