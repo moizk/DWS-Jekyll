@@ -23,8 +23,8 @@ div#bgvid {
   div.call-to-action-message {
     /* Positioning */
     position: absolute;
+    top: 5%;
     /* Box-model */
-    margin-top: -1000px;
     margin-left: auto;
     margin-right: auto;
     width: 99%;
@@ -183,6 +183,7 @@ div.about-page-header {
 
 div.story-strip {
   /* Positioning */
+  padding: 0;
   /* Box-model */
   /* Typography */
   /* Visual */
@@ -190,12 +191,17 @@ div.story-strip {
 }
 
 div.story-content {
-  max-width: 80%;
+  max-width: 850px;
   margin: 0 auto;
+  @media screen and (max-width: 841px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   h3 {
     /* Positioning */
     /* Box-model */
-    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     /* Typography */
     font-size: 50px;
     font-weight: 100;
@@ -205,11 +211,44 @@ div.story-content {
   p {
     /* Positioning */
     /* Box-model */
+    margin-bottom: 25px;
     /* Typography */
     font-family: 'kepler-std', serif;
     font-size: 24px;
     font-weight: 100;
-    line-height: 1.5;
+    line-height: 36px;
+    /* Visual */
+    /* Misc */
+  }
+}
+
+div.legacy-content {
+  max-width: 80%;
+  padding-top: 20px;
+  margin: 0 auto;
+  div.col-md-6 {
+    padding: 0;
+  }
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 20px;
+    padding-bottom: 50px;
+    /* Typography */
+    font-size: 50px;
+    font-weight: 100;
+    /* Visual */
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    margin-bottom: 25px;
+    /* Typography */
+    font-family: 'kepler-std', serif;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 36px;
     /* Visual */
     /* Misc */
   }
@@ -837,6 +876,7 @@ div.owen-content {
   p {
     /* Positioning */
     /* Box-model */
+    margin-bottom: 35px;
     /* Typography */
     font-family: 'kepler-std', serif;
     font-size: 20px;
@@ -962,7 +1002,6 @@ div.contact-page-header {
   /* Positioning */
   /* Box-model */
   padding-bottom: 35px;
-  margin-bottom: 50px;
   /* Typography */
   /* Visual */
   background-color: rgb(242, 243, 245);
@@ -1011,6 +1050,73 @@ div.contact-page-header {
 
 div#dws_contact_page_map {
   height: 500px;
+}
+
+div.contact-strip {
+  /* Positioning */
+  /* Box-model */
+  padding-top: 25px;
+  max-width: 280px;
+  min-height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  background-color: #f2f3f5;
+  /* Misc */
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* Visual */
+    /* Misc */
+  }
+  h4 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    /* Typography */
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+  }
+  h5 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-weight: 100;
+    font-size: 25px;
+    color: #777;
+    /* Visual */
+    /* Misc */
+  }
+  h6 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-weight: 100;
+    font-size: 25px;
+    /* Visual */
+    color: #666;
+    /* Misc */
+  }
+}
+
+div.contact-long-strip {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  /* Misc */
 }
 
 /*****************************************************************************/
@@ -1246,3 +1352,11 @@ a {
     /* Misc */
   }
 }
+
+.icon-1x { font-size: 10px; }
+.icon-2x { font-size: 20px; }
+.icon-3x { font-size: 30px; }
+.icon-4x { font-size: 40px; }
+.icon-5x { font-size: 50px; }
+.icon-6x { font-size: 60px; }
+.icon-7x { font-size: 70px; }
