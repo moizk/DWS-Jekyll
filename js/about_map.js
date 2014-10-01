@@ -6,10 +6,10 @@ google.maps.visualRefresh = true;
 var contactMap;
 
 function aboutInitialize() {
-  var dwsCenter = new google.maps.LatLng(20.5505084, 7.4843037)
+  var dwsCenter = new google.maps.LatLng(40.1545531, -99.1376119)
   var dwsOffice = new google.maps.LatLng(40.767795, -73.297847)
   var mapOptions = {
-    zoom: 3,
+    zoom: 5,
     center: dwsCenter,
     scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
