@@ -529,20 +529,22 @@ div.client-strip {
     /* Positioning */
     /* Box-model */
     padding-top: 50px;
+    padding-bottom: 15px;
     /* Typography */
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 100;
     /* Visual */
     /* Misc */
   }
   p {
     /* Positioning */
     /* Box-model */
-    margin: 0 auto;
+    margin-bottom: 25px;
     /* Typography */
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
+    font-family: 'kepler-std', serif;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.5;
     /* Visual */
     /* Misc */
   }
@@ -557,11 +559,12 @@ div.client-strip {
   p.pull-quote {
     /* Positioning */
     /* Box-model */
-    max-width: 300px;
+    max-width: 90%;
     padding-top: 15px;
     margin-bottom: 15px;
     padding-bottom: 25px;
     /* Typography */
+    font-family: 'proxima-nova', serif;
     font-size: 30px;
     font-weight: 100;
     line-height: 1.4;
@@ -587,6 +590,19 @@ div.client-strip {
     /* Typography */
     font-size: 14px;
     /* Visual */
+    /* Misc */
+  }
+}
+
+ul.details-list {
+  li {
+    /* Positioning */
+    /* Box-model */
+    padding: 10px;
+    margin-bottom: 5px;
+    /* Typography */
+    /* Visual */
+    background-color: #eee;
     /* Misc */
   }
 }
@@ -728,7 +744,6 @@ div.minimal-story-container {
     /* Positioning */
     /* Box-model */
     /* Typography */
-    font-family: "minion-pro", serif;
     font-size: 22px;
     line-height: 1.5;
     font-weight: 400;
@@ -1066,17 +1081,17 @@ div.contact-strip {
   background-color: #f2f3f5;
   /* Misc */
   h3 {
-    /* Positioning */
-    /* Box-model */
-    padding-top: 25px;
-    padding-bottom: 25px;
-    /* Typography */
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* Visual */
-    /* Misc */
+  /* Positioning */
+  /* Box-model */
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* Typography */
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Visual */
+  /* Misc */
   }
   h4 {
     /* Positioning */
