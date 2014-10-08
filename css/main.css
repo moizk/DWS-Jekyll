@@ -272,6 +272,9 @@ div.team-strip {
     text-transform: uppercase;
     /* Visual */
     /* Misc */ }
+    @media screen and (max-width: 540px) {
+      div.team-strip h2 {
+        font-size: 42px; } }
 
 div.legacy-strip {
   /* Positioning */
@@ -361,6 +364,9 @@ div.reach-header {
 
 div#dws_about_page_map {
   height: 720px; }
+  @media screen and (max-width: 540px) {
+    div#dws_about_page_map {
+      height: 300px; } }
 
 div.about-page-sub-header {
   text-align: center; }
@@ -651,12 +657,12 @@ p.team-bio-big {
   height: 555px;
   width: 95%;
   /* Typography */
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 300;
   text-align: left;
   line-height: 1.5;
   /* Visual */
-  background-color: rgba(17, 17, 17, 0.9);
+  background-color: rgba(17, 17, 17, 0.6);
   color: #fff;
   /* Misc */
   opacity: 0;
@@ -684,7 +690,7 @@ p.team-bio {
   text-align: left;
   line-height: 1.5;
   /* Visual */
-  background-color: rgba(17, 17, 17, 0.9);
+  background-color: rgba(17, 17, 17, 0.6);
   color: #fff;
   /* Misc */
   opacity: 0;
@@ -708,6 +714,8 @@ div.footer {
     /* Positioning */
     /* Box-model */
     margin: 0;
+    padding-left: 0;
+    padding-top: 10px;
     padding-bottom: 25px;
     /* Typography */
     font-size: 14px;
@@ -795,6 +803,9 @@ div.printing-strip {
     text-transform: uppercase;
     /* Visual */
     /* Misc */ }
+    @media screen and (max-width: 540px) {
+      div.printing-strip h2 {
+        font-size: 42px; } }
 
 div.flexo-strip {
   /* Positioning */
@@ -821,6 +832,9 @@ div.flexo-strip {
     text-transform: uppercase;
     /* Visual */
     /* Misc */ }
+    @media screen and (max-width: 540px) {
+      div.flexo-strip h2 {
+        font-size: 42px; } }
 
 div.big-big-strip {
   /* Positioning */
@@ -847,6 +861,9 @@ div.big-big-strip {
     text-transform: uppercase;
     /* Visual */
     /* Misc */ }
+    @media screen and (max-width: 540px) {
+      div.big-big-strip h2 {
+        font-size: 42px; } }
 
 div.another-strip {
   /* Positioning */
@@ -871,6 +888,25 @@ div.another-strip {
     line-height: 55px;
     font-weight: 600;
     text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+    @media screen and (max-width: 540px) {
+      div.another-strip h2 {
+        font-size: 42px; } }
+
+ul.story-list {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  /* Misc */ }
+  ul.story-list li {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-family: 'kepler-std', serif;
+    font-size: 20px;
+    font-weight: 100;
     /* Visual */
     /* Misc */ }
 
