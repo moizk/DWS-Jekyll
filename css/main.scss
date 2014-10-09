@@ -11,15 +11,7 @@
  }
 
 
-div#bgvid {
-  width: auto;
-  height: auto;
-  video {
-    height: auto;
-    width: auto;
-    min-height: 800px;
-    min-width: 100%;
-  }
+div.index-film-loop {
   div.call-to-action-message {
     /* Positioning */
     position: absolute;
@@ -33,6 +25,14 @@ div#bgvid {
     /* Visual */
     color: #fff;
     /* Misc */
+    @media screen and (max-width: 879px) {
+      /* Positioning */
+      /* Box-model */
+      top: 0;
+      /* Typography */
+      /* Visual */
+      /* Misc */
+    }
     h2 {
       /* Positioning */
       /* Box-model */
@@ -46,6 +46,10 @@ div#bgvid {
       text-transform: uppercase;
       /* Visual */
       /* Misc */
+      @media screen and (max-width: 879px) {
+        padding-top: 150px;
+        font-size: 42px;
+      }
     }
   }
 }
