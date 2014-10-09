@@ -6,11 +6,52 @@
 * {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
+div.mobile-frame {
+  /* Positioning */
+  /* Box-model */
+  margin-top: 0;
+  padding-top: 0;
+  height: 500px;
+  /* Typography */
+  /* Visual */
+  background-image: url(/img/mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Misc */ }
+  div.mobile-frame div.call-to-action-message {
+    /* Positioning */
+    position: relative;
+    /* Box-model */
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    color: #fff;
+    /* Misc */ }
+    div.mobile-frame div.call-to-action-message h2 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      padding-top: 60px;
+      /* Typography */
+      text-align: center;
+      font-size: 42px;
+      line-height: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
+      /* Visual */
+      /* Misc */ }
+
 div.index-film-loop div.call-to-action-message {
   /* Positioning */
   position: absolute;
   top: 5%;
   /* Box-model */
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 99%;
@@ -19,19 +60,9 @@ div.index-film-loop div.call-to-action-message {
   /* Visual */
   color: #fff;
   /* Misc */ }
-  @media screen and (max-width: 879px) {
-    div.index-film-loop div.call-to-action-message {
-      /* Positioning */
-      /* Box-model */
-      top: 0;
-      /* Typography */
-      /* Visual */
-      /* Misc */ } }
   div.index-film-loop div.call-to-action-message h2 {
     /* Positioning */
     /* Box-model */
-    margin-top: 0;
-    padding-top: 200px;
     /* Typography */
     text-align: center;
     font-size: 62px;
@@ -40,10 +71,6 @@ div.index-film-loop div.call-to-action-message {
     text-transform: uppercase;
     /* Visual */
     /* Misc */ }
-    @media screen and (max-width: 879px) {
-      div.index-film-loop div.call-to-action-message h2 {
-        padding-top: 150px;
-        font-size: 42px; } }
 
 nav.top-navigation {
   /* Positioning */
