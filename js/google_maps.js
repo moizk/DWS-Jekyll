@@ -144,7 +144,6 @@ function contactInitialize() {
       '<p class="text-center">89 N Industry Ct.<br>' +
       'Deer Park, NY 11729<br><br>'+
       'Phone: (631) 667-6666<br>'+
-      'Hours: M-F: 7am - 11pm</p>'+
       '</div>'+
       '</div>';
 

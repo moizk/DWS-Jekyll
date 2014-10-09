@@ -6,45 +6,61 @@
 * {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
-div#bgvid {
-  width: auto;
-  height: auto; }
-  div#bgvid video {
-    height: auto;
-    width: auto;
-    min-height: 800px;
-    min-width: 100%; }
-  div#bgvid div.call-to-action-message {
-    /* Positioning */
-    position: absolute;
-    top: 5%;
-    /* Box-model */
-    margin-left: auto;
-    margin-right: auto;
-    width: 99%;
-    /* Typography */
-    text-align: center;
-    /* Visual */
-    color: #fff;
-    /* Misc */ }
-    div#bgvid div.call-to-action-message h2 {
+div.index-film-loop div.call-to-action-message {
+  /* Positioning */
+  position: absolute;
+  top: 5%;
+  /* Box-model */
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  /* Typography */
+  text-align: center;
+  /* Visual */
+  color: #fff;
+  /* Misc */ }
+  @media screen and (max-width: 879px) {
+    div.index-film-loop div.call-to-action-message {
       /* Positioning */
       /* Box-model */
-      margin-top: 0;
-      padding-top: 200px;
+      top: 0;
       /* Typography */
-      text-align: center;
-      font-size: 62px;
-      line-height: 55px;
-      font-weight: 600;
-      text-transform: uppercase;
       /* Visual */
-      /* Misc */ }
+      /* Misc */ } }
+  div.index-film-loop div.call-to-action-message h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 200px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */ }
+    @media screen and (max-width: 879px) {
+      div.index-film-loop div.call-to-action-message h2 {
+        padding-top: 150px;
+        font-size: 42px; } }
 
 nav.top-navigation {
-  height: 70px; }
-  nav.top-navigation img {
-    padding-top: 2px; }
+  /* Positioning */
+  /* Box-model */
+  margin-bottom: 0;
+  /* Typography */
+  /* Visual */
+  background-color: #fff;
+  border-bottom: 0;
+  /* Misc */ }
+  nav.top-navigation a.navbar-brand {
+    /* Positioning */
+    /* Box-model */
+    padding: 0 0 0 10px;
+    /* Typography */
+    /* Visual */
+    /* Misc */ }
   nav.top-navigation h5 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif;
     color: #333;
@@ -57,29 +73,34 @@ nav.top-navigation {
     text-transform: uppercase; }
   nav.top-navigation ul {
     margin-bottom: 0; }
-    nav.top-navigation ul li a {
-      /* Positioning */
-      /* Box-model */
-      /* Typography */
-      line-height: 70px;
-      font-family: "proxima-nova", 'Helvetica Neue' , Arial, sans-serif;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 300;
-      /* Visual */
-      color: #808080;
-      /* Misc */
-      -webkit-transition: all .3s ease-in-out;
-      -moz-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
-      nav.top-navigation ul li a:hover {
+    nav.top-navigation ul li {
+      text-align: center; }
+      nav.top-navigation ul li a {
         /* Positioning */
         /* Box-model */
+        padding-top: 25px;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-bottom: 0;
         /* Typography */
-        text-decoration: none;
+        font-family: "proxima-nova", 'Helvetica Neue' , Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 300;
         /* Visual */
-        color: #2f79e7;
-        /* Misc */ }
+        color: #808080;
+        /* Misc */
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        nav.top-navigation ul li a:hover {
+          /* Positioning */
+          /* Box-model */
+          /* Typography */
+          text-decoration: none;
+          /* Visual */
+          color: #2f79e7 !important;
+          /* Misc */ }
 
 div.dws-page-header h2 {
   /* Positioning */
@@ -232,9 +253,9 @@ div.legacy-content {
     /* Visual */
     /* Misc */ }
     div.legacy-content h3 span {
-      font-size: 45px;
-      margin-top: 0;
-      line-height: 0px; }
+      font-family: 'Helvetica Neue', Arial, sans-serif !important;
+      font-size: 18px;
+      vertical-align: top; }
   div.legacy-content p {
     /* Positioning */
     /* Box-model */
