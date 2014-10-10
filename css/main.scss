@@ -350,6 +350,10 @@ div.team-strip {
   background-size: cover;
   color: #fff;
   /* Misc */
+  @media screen and (max-width: 540px) {
+    background-position: center;
+    background-size: initial;
+  }
   h2 {
     /* Positioning */
     /* Box-model */
@@ -619,7 +623,7 @@ div.client-strip {
     max-width: 500px;
   }
   img.resized {
-    height: 500px;
+    max-height: 500px;
   }
   h4 {
     /* Positioning */
@@ -796,7 +800,7 @@ p.team-bio-big {
     padding: 20px;
     margin-top: -555px;
     height: 555px;
-    width: 95%;
+    max-width: 555px;
     /* Typography */
     font-size: 22px;
     font-weight: 300;
