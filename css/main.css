@@ -307,6 +307,10 @@ div.team-strip {
   background-size: cover;
   color: #fff;
   /* Misc */ }
+  @media screen and (max-width: 540px) {
+    div.team-strip {
+      background-position: center;
+      background-size: initial; } }
   div.team-strip h2 {
     /* Positioning */
     /* Box-model */
@@ -546,7 +550,7 @@ div.client-strip {
   div.client-strip div.copy {
     max-width: 500px; }
   div.client-strip img.resized {
-    height: 500px; }
+    max-height: 500px; }
   div.client-strip h4 {
     /* Positioning */
     /* Box-model */
@@ -703,7 +707,7 @@ p.team-bio-big {
   padding: 20px;
   margin-top: -555px;
   height: 555px;
-  width: 95%;
+  max-width: 555px;
   /* Typography */
   font-size: 22px;
   font-weight: 300;
