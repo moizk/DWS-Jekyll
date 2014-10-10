@@ -131,6 +131,49 @@ function aboutInitialize() {
     title: 'DWS Office'
   });
 
+    new google.maps.Marker({ position: new google.maps.LatLng(41.03,-73.63), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(37.6312485,-120.9804121), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(30.2584883,-89.4595319), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(40.2347855,-74.4522874), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.3050865,-70.8449035), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(40.8742345,-73.4149914), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(33.6432375,-84.444672), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.7881396,-78.699105), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(42.3904949,-85.194764), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(42.0360345,-88.412133), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(40.0293725,-75.7191), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(32.8946349,-117.049719), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(27.9350544,-82.3815985), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(44.0460449,-71.1197925), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(37.8918359,-122.0386904), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(33.9922081,-84.649447), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(44.2694236,-74.4842015), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(37.8800664,-122.265198), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(36.1164715,-94.0518999), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(36.151423,-86.7912164), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(37.4142965,-107.4775915), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(42.349717,-71.0332459), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(39.0838455,-94.582942), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(40.092957,-75.3913579), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.9966805,-73.1480624), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.9737954,-71.2552189), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.4912856,-76.1001354), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.660943,-70.260332), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(36.062515,-79.8235095), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(41.7902674,-71.6917895), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.9792796,-75.9087928), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.6356059,-90.669669), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(40.123304,-82.3851), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(41.7166834,-86.3413705), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(39.1582147,-75.5233588), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.828143,-104.8326766), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(41.3917999,-83.3140541), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.03,-87.92), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.68053,-123.42889), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(45.0702489,-87.141063), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.2725545,-85.625635), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(41.8172344,-71.4095425), map: contactMap });
+
   google.maps.event.addListener(mainOffice, 'click', function() {
     dwsWindow.open(contactMap,mainOffice);
   });
