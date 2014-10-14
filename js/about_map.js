@@ -173,6 +173,17 @@ function aboutInitialize() {
     new google.maps.Marker({ position: new google.maps.LatLng(45.0702489,-87.141063), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(38.2725545,-85.625635), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(41.8172344,-71.4095425), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(42.7659543,-86.1069814), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(37.288464,-80.0669265), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(39.2847064,-76.6204859), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(40.4313684,-79.9805005), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(43.098369,-75.2281009), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.2891751,-122.3063215), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(36.9209557,-121.767273), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.9227306,-119.9785145), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(36.217517,-115.1207038), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(38.7931405,-104.9543185), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(44.4030225,-109.5779295), map: contactMap });
 
   google.maps.event.addListener(mainOffice, 'click', function() {
     dwsWindow.open(contactMap,mainOffice);
