@@ -185,6 +185,8 @@ function aboutInitialize() {
     new google.maps.Marker({ position: new google.maps.LatLng(38.7931405,-104.9543185), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(44.4030225,-109.5779295), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(49.2569777,-123.123904), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(45.7819194,-108.5636845), map: contactMap });
+
 
   google.maps.event.addListener(mainOffice, 'click', function() {
     dwsWindow.open(contactMap,mainOffice);
