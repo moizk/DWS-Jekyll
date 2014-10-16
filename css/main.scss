@@ -848,7 +848,7 @@ p.team-bio {
 
     &:hover {
       opacity: 1;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1201px) {
         opacity: 0;
       }
     }
@@ -1257,7 +1257,7 @@ div.contact-page-header {
 }
 
 div#dws_contact_page_map {
-  height: 500px;
+  height: 400px;
 }
 
 div.contact-strip {
@@ -1265,7 +1265,7 @@ div.contact-strip {
   /* Box-model */
   padding-top: 25px;
   max-width: 280px;
-  min-height: 500px;
+  min-height: 600px;
   margin-right: auto;
   margin-left: auto;
   /* Typography */
@@ -1320,7 +1320,7 @@ div.contact-strip {
     /* Box-model */
     /* Typography */
     font-weight: 100;
-    font-size: 25px;
+    font-size: 23px;
     /* Visual */
     color: #666;
     /* Misc */

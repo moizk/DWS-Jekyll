@@ -6,7 +6,7 @@ google.maps.visualRefresh = true;
 var contactMap;
 
 function contactInitialize() {
-  var dwsCenter = new google.maps.LatLng(40.777795, -73.297847)
+  var dwsCenter = new google.maps.LatLng(40.797795, -73.297847)
   var dwsOffice = new google.maps.LatLng(40.767795, -73.297847)
   var mapOptions = {
     zoom: 10,

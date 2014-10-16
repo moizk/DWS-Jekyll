@@ -9,7 +9,7 @@ function aboutInitialize() {
   var dwsCenter = new google.maps.LatLng(40.1545531, -99.1376119)
   var dwsOffice = new google.maps.LatLng(40.767795, -73.297847)
   var mapOptions = {
-    zoom: 5,
+    zoom: 4,
     center: dwsCenter,
     scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -186,6 +186,8 @@ function aboutInitialize() {
     new google.maps.Marker({ position: new google.maps.LatLng(44.4030225,-109.5779295), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(49.2569777,-123.123904), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(45.7819194,-108.5636845), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(18.3848264,-66.0583415), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(45.6119975,-73.5697534), map: contactMap });
 
 
   google.maps.event.addListener(mainOffice, 'click', function() {
