@@ -11,6 +11,7 @@ function contactInitialize() {
   var mapOptions = {
     zoom: 10,
     center: dwsCenter,
+    draggable: false,
     scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     styles: [

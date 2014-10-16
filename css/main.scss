@@ -659,6 +659,8 @@ div.client-strip {
   p.pull-quote {
     /* Positioning */
     /* Box-model */
+    margin-left: auto;
+    margin-right: auto;
     max-width: 90%;
     padding-top: 15px;
     margin-bottom: 15px;
@@ -710,6 +712,8 @@ ul.details-list {
   p.pull-quote-long {
     /* Positioning */
     /* Box-model */
+    margin-left: auto;
+    margin-right: auto;
     max-width: 500px;
     padding-top: 15px;
     margin-bottom: 15px;

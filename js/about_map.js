@@ -12,6 +12,7 @@ function aboutInitialize() {
     zoom: 4,
     center: dwsCenter,
     scrollwheel: false,
+    draggable: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     styles: [
     {
