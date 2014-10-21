@@ -10,6 +10,10 @@
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
  }
 
+ div.dws-website {
+  margin-top: 70px;
+ }
+
 div.mobile-frame {
   /* Positioning */
   /* Box-model */
@@ -83,13 +87,14 @@ div.index-film-loop {
   }
 }
 
+
 nav.top-navigation {
   /* Positioning */
   /* Box-model */
   margin-bottom: 0;
   /* Typography */
   /* Visual */
-  background-color: #fff;
+  background-color: rgba(255, 255, 255,1);
   border-bottom: 0;
   /* Misc */
   a.navbar-brand {
@@ -294,6 +299,10 @@ div.story-content {
     line-height: 36px;
     /* Visual */
     /* Misc */
+    i {
+      font-weight: 100;
+      font-family: 'kepler-std', serif;
+    }
   }
 }
 
@@ -1265,11 +1274,11 @@ div#dws_contact_page_map {
 }
 
 div.contact-strip {
-  /* Positioning */
-  /* Box-model */
+    /* Positioning */
+    /* Box-model */
   padding-top: 25px;
   max-width: 280px;
-  min-height: 600px;
+  min-height: 330px;
   margin-right: auto;
   margin-left: auto;
   /* Typography */

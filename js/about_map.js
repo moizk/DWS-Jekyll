@@ -293,7 +293,8 @@ function aboutInitialize() {
     new google.maps.Marker({ position: new google.maps.LatLng(45.7819194,-108.5636845), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(18.3848264,-66.0583415), map: contactMap });
     new google.maps.Marker({ position: new google.maps.LatLng(45.6119975,-73.5697534), map: contactMap });
-
+    new google.maps.Marker({ position: new google.maps.LatLng(30.3077609,-97.7534014), map: contactMap });
+    new google.maps.Marker({ position: new google.maps.LatLng(45.5424364,-122.654422), map: contactMap });
 
     google.maps.event.addDomListener(window, "resize", function() {
        var center = contactMap.getCenter();
