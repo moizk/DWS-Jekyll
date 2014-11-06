@@ -275,17 +275,11 @@ div.story-content {
   h4 {
     /* Positioning */
     /* Box-model */
-    display: inline-block;
-    margin: 0 auto 15px auto;
-    padding: 15px;
     /* Typography */
-    font-weight: 300;
+    font-weight: 700;
     /* Visual */
-    text-align: center;
-    border: 1px solid rgb(54,54,54);
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
     /* Misc */
   }
   p {
@@ -1288,6 +1282,9 @@ div.contact-page-header {
 
 div#dws_contact_page_map {
   height: 400px;
+  @media screen and (max-width: 841px) {
+    display: none;
+  }
 }
 
 div.contact-strip {
