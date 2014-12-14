@@ -1609,3 +1609,74 @@ a {
 .icon-5x { font-size: 50px; }
 .icon-6x { font-size: 60px; }
 .icon-7x { font-size: 70px; }
+
+/*****************************************************************************/
+/*
+/* Guides
+/*
+/*****************************************************************************/
+
+div.guide-container {
+  /* Positioning */
+  /* Box-model */
+  max-width: 620px;
+  margin: 10px auto;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+  h1 {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-weight: 300;
+    /* Visual */
+    /* Misc */
+  }
+  h3 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    /* Typography */
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Visual */
+    border-bottom: 1px solid #eee;
+    /* Misc */
+  }
+  p {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'kepler-std', serif;
+    /* Visual */
+    /* Misc */
+  }
+  p.lead {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-size: 22px;
+    /* Visual */
+    /* Misc */
+  }
+  ul,ol {
+    li {
+      /* Positioning */
+      /* Box-model */
+      padding-bottom: 15px;
+      /* Typography */
+      font-size: 18px;
+      font-weight: 100;
+      font-family: 'kepler-std', serif;
+      /* Visual */
+      /* Misc */
+    }
+  }
+}
