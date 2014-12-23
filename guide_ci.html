@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Customer Interest Form
+title: Client Information Form
 ---
 
-<div class="about-page-header text-center">
-  <h2>Customer Interest Form</h2>
-  <h3>Est. 1865</h3>
-  <i class="ion-star"></i>
+<div class="guide-container">
+  <h1>Client Information Form</h1>
 </div>
 
 <div class="container">
@@ -82,21 +80,21 @@ title: Customer Interest Form
 
     <div class="row">
       <div class="form-group col-sm-6">
-        <label for="db" class="general-text-label">Do you report to Dun & Bradstreet?</label>
-        <input type="text" name="db" placeholder="" class="general-text-input">
+        <label for="db_bool" class="general-text-label">Do you report to Dun & Bradstreet?</label>
+        <input type="text" name="db_bool" placeholder="" class="general-text-input">
       </div>
 
       <div class="form-group col-sm-6">
         <label for="db_number" class="general-text-label">D&B Number</label>
-        <input type="text" name="db_number" placeholder="D&B Number" class="general-text-input">
+        <input type="text" name="db_number" class="general-text-input">
       </div>
     </div>
 
     <div class="form-group">
       <label for="fed_number" class="general-text-label">Federal ID Number</label>
-      <input type="text" name="fed_number" placeholder="Federal ID Number" class="general-text-input">
+      <input type="text" name="fed_number" class="general-text-input">
     </div>
-
+    <hr>
     <div class="form-group">
       <label for="controller_name" class="general-text-label">Controller's Contact</label>
       <input type="text" name="controller_name" placeholder="" class="general-text-input">
@@ -104,7 +102,7 @@ title: Customer Interest Form
 
     <div class="form-group">
       <label for="controller_contact" class="general-text-label">Controller's Phone Number & Extension</label>
-      <input type="text" name="controller_contact" placeholder="Your Controller's Phone Number & Extension" class="general-text-input">
+      <input type="text" name="controller_contact" class="general-text-input">
     </div>
     <hr>
 
@@ -164,7 +162,7 @@ title: Customer Interest Form
       </div>
 
       <div class="form-group col-sm-3">
-        <label for="bill_to_state" class="general-text-label">Ship to State</label>
+        <label for="ship_to_state" class="general-text-label">Ship to State</label>
         <input type="text" name="ship_to_state" placeholder="State" class="general-text-input">
       </div>
 
@@ -173,6 +171,146 @@ title: Customer Interest Form
         <input type="text" name="ship_to_zip" placeholder="Zip Code" class="general-text-input">
       </div>
     </div>
+    <hr>
+    <h3>Bank Reference</h3>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="bank_contact_name" class="general-text-label">Contact Name</label>
+        <input type="text" name="bank_contact_name" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="bank_name" class="general-text-label">Bank Name</label>
+        <input type="text" name="bank_name" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="bank_address" class="general-text-label">Bank Reference Address</label>
+        <input type="text" name="bank_address" placeholder="Address" class="general-text-input">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="bank_city" class="general-text-label">Bank Reference City</label>
+        <input type="text" name="bank_city" placeholder="City" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="bank_state" class="general-text-label">Bank Reference State</label>
+        <input type="text" name="bank_state" placeholder="State" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="bank_zip" class="general-text-label">Bank Reference Zip Code</label>
+        <input type="text" name="bank_zip" placeholder="Zip Code" class="general-text-input">
+      </div>
+    </div>
+    <hr>
+    <h3>Current Trade Reference 1</h3>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="cr1_name" class="general-text-label">Name</label>
+        <input type="text" name="cr1_name" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="cr1_address" class="general-text-label">Address</label>
+        <input type="text" name="cr1_address" placeholder="Address" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="cr1_city" class="general-text-label">City</label>
+        <input type="text" name="cr1_city" placeholder="City" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="cr1_state" class="general-text-label">State</label>
+        <input type="text" name="cr1_state" placeholder="State" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="cr1_zip" class="general-text-label">Zip Code</label>
+        <input type="text" name="cr1_zip" placeholder="Zip Code" class="general-text-input">
+      </div>
+    </div>
+    <hr>
+    <h3>Current Trade Reference 2</h3>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="cr2_name" class="general-text-label">Name</label>
+        <input type="text" name="cr2_name" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="cr2_address" class="general-text-label">Address</label>
+        <input type="text" name="cr2_address" placeholder="Address" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="cr2_city" class="general-text-label">City</label>
+        <input type="text" name="cr2_city" placeholder="City" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="cr2_state" class="general-text-label">State</label>
+        <input type="text" name="cr2_state" placeholder="State" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="cr2_zip" class="general-text-label">Zip Code</label>
+        <input type="text" name="cr2_zip" placeholder="Zip Code" class="general-text-input">
+      </div>
+    </div>
+    <hr>
+    <h3>Current Trade Reference 3</h3>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="cr3_name" class="general-text-label">Name</label>
+        <input type="text" name="cr3_name" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label for="cr3_address" class="general-text-label">Address</label>
+        <input type="text" name="cr3_address" placeholder="Address" class="general-text-input">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="cr3_city" class="general-text-label">City</label>
+        <input type="text" name="cr3_city" placeholder="City" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="cr3_state" class="general-text-label">State</label>
+        <input type="text" name="cr3_state" placeholder="State" class="general-text-input">
+      </div>
+
+      <div class="form-group col-sm-3">
+        <label for="cr3_zip" class="general-text-label">Zip Code</label>
+        <input type="text" name="cr3_zip" placeholder="Zip Code" class="general-text-input">
+      </div>
+    </div>
+    <hr>
+    <h3>Your Information</h3>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="your_name" class="general-text-label">Name</label>
+        <input type="text" name="your_name" class="general-text-input">
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="your_title" class="general-text-label">Title</label>
+        <input type="text" name="your_title" class="general-text-input">
+      </div>
+    </div>
+
 
     <br>
     <input class="btn btn-primary btn-lg" type="submit" value="Submit">
