@@ -1627,8 +1627,11 @@ div.guide-container {
   h1 {
     /* Positioning */
     /* Box-model */
+    padding-top: 50px;
+    margin-bottom: 50px;
     /* Typography */
-    font-weight: 300;
+    font-weight: 100;
+    text-align: center;
     /* Visual */
     /* Misc */
   }
@@ -1642,7 +1645,7 @@ div.guide-container {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     /* Visual */
     border-bottom: 1px solid #eee;
@@ -1653,8 +1656,7 @@ div.guide-container {
     /* Box-model */
     /* Typography */
     font-size: 18px;
-    font-weight: 100;
-    font-family: 'kepler-std', serif;
+    font-weight: 300;
     /* Visual */
     /* Misc */
   }
@@ -1673,8 +1675,7 @@ div.guide-container {
       padding-bottom: 15px;
       /* Typography */
       font-size: 18px;
-      font-weight: 100;
-      font-family: 'kepler-std', serif;
+      font-weight: 300;
       /* Visual */
       /* Misc */
     }
