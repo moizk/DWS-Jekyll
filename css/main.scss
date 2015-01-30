@@ -304,7 +304,7 @@ div.legacy-content {
   max-width: 80%;
   padding-top: 20px;
   margin: 0 auto;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
   }
   div.col-md-6 {
@@ -388,7 +388,7 @@ div.legacy-strip {
   background-size: cover;
   background-position: center;
   /* Misc */
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
   }
 }
