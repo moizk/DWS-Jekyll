@@ -887,13 +887,31 @@ p.team-bio {
 
 div.footer {
   padding-top: 50px;
+  input, .button {
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+  }
   h5 {
     /* Positioning */
     /* Box-model */
     margin: 0;
     padding-left: 0;
     padding-top: 10px;
-    padding-bottom: 25px;
+    /* Typography */
+    font-size: 14px;
+    font-weight: 100;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    /* Visual */
+    color: #333;
+    /* Misc */
+  }
+  h6 {
+    /* Positioning */
+    /* Box-model */
+    margin: 0;
+    padding-left: 0;
+    padding-top: 10px;
     /* Typography */
     font-size: 14px;
     font-weight: 100;
