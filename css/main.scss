@@ -101,18 +101,21 @@ nav.top-navigation {
     /* Positioning */
     /* Box-model */
     padding: 0 0 0 10px;
+    height: 90px;
     /* Typography */
     /* Visual */
     /* Misc */
   }
   img {
+    text-align: center;
+    margin-bottom: 0;
   }
   h5 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif;
     color: #333;
-    line-height: 70px;
+    line-height: 30px;
+    padding-top: 0;
     margin: 0;
-    padding-left: 15px;
     font-size: 14px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -125,7 +128,7 @@ nav.top-navigation {
       a {
         /* Positioning */
         /* Box-model */
-        padding-top: 25px;
+        padding-top: 35px;
         padding-left: 5px;
         padding-right: 10px;
         padding-bottom: 0;
@@ -892,16 +895,39 @@ div.footer {
        -moz-border-radius: 0px;
             border-radius: 0px;
   }
+  h4 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+  }
+  dt {
+    /* Positioning */
+    /* Box-model */
+    margin-bottom: 10px;
+    /* Typography */
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* Visual */
+    color: #828c97;
+    /* Misc */
+  }
   h5 {
     /* Positioning */
     /* Box-model */
     margin: 0;
     padding-left: 0;
-    padding-top: 10px;
+    padding-top: 0px;
     /* Typography */
     font-size: 14px;
     font-weight: 100;
     font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
     /* Visual */
     color: #333;
     /* Misc */
