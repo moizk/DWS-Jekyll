@@ -841,7 +841,7 @@ p.team-bio-big {
 
     &:hover {
       opacity: 1;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1200px) {
         display: none;
         opacity: 0;
       }
