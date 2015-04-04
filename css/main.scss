@@ -109,6 +109,8 @@ nav.top-navigation {
   img {
     text-align: center;
     margin-bottom: 0;
+    max-width: 60px;
+    max-height: 60px;
   }
   h5 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif;
@@ -894,6 +896,10 @@ div.footer {
     -webkit-border-radius: 0px;
        -moz-border-radius: 0px;
             border-radius: 0px;
+  }
+  img {
+    max-width: 60px;
+    max-height: 60px;
   }
   h4 {
     /* Positioning */
