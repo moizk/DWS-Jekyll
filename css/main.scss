@@ -1252,16 +1252,17 @@ div.design-images {
   /* Typography */
   /* Visual */
   // background-color: #5cb8e6;
-  background-image: url(../img/design/label-all.jpg);
+  background-image: url(../img/design/owen.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: #fff;
   /* Misc */
   h2 {
     /* Positioning */
     /* Box-model */
     margin-top: 0;
-    padding-top: 200px;
+    padding-top: 54%;
     /* Typography */
     text-align: center;
     font-size: 62px;
@@ -1271,6 +1272,15 @@ div.design-images {
     /* Visual */
     /* Misc */
   }
+}
+
+div.border-top {
+  /* Positioning */
+  /* Box-model */
+  border-top: 1px solid #eee;
+  /* Typography */
+  /* Visual */
+  /* Misc */
 }
 
 
