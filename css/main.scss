@@ -616,35 +616,42 @@ div.clients-page-header {
     }
   }
 
-  div.clients-film-loop {
-    div.call-to-action-message {
+  div.face-to-face-strip {
+    /* Positioning */
+    /* Box-model */
+    height: 720px;
+    /* Typography */
+    /* Visual */
+    background-color: #000;
+    background-image: url(../img/clients/face-to-face-ballast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* Misc */
+    @media screen and (max-width: 540px) {
+      background-position: center;
+      background-size: initial;
+    }
+    h2 {
       /* Positioning */
-      position: absolute;
-      top: 5%;
       /* Box-model */
-      margin-top: 275px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 99%;
+      margin-top: 0;
+      padding-top: 90px;
       /* Typography */
       text-align: center;
+      font-size: 62px;
+      line-height: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
       /* Visual */
-      color: #fff;
       /* Misc */
-      h2 {
-        /* Positioning */
-        /* Box-model */
-        /* Typography */
-        text-align: center;
-        font-size: 62px;
-        line-height: 55px;
-        font-weight: 600;
-        text-transform: uppercase;
-        /* Visual */
-        /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 42px;
       }
     }
   }
+
+
 
 div.bb-strip {
   /* Positioning */
@@ -1083,6 +1090,41 @@ div.printing-page-header {
     text-align: center;
     /* Visual */
     /* Misc */
+  }
+}
+
+div.introducing-beauty-strip {
+  /* Positioning */
+  /* Box-model */
+  height: 720px;
+  /* Typography */
+  /* Visual */
+  background-color: #000;
+  background-image: url(../img/printing/introducing-beauty.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* Misc */
+  @media screen and (max-width: 540px) {
+    background-position: center;
+    background-size: initial;
+  }
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    margin-top: 0;
+    padding-top: 90px;
+    /* Typography */
+    text-align: center;
+    font-size: 62px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+    @media screen and (max-width: 540px) {
+      font-size: 42px;
+    }
   }
 }
 
