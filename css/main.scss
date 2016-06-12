@@ -626,11 +626,14 @@ div.clients-page-header {
     background-image: url(../img/clients/face-to-face-ballast.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #fff;
     /* Misc */
     @media screen and (max-width: 540px) {
       background-position: center;
-      background-size: initial;
+      background-size: cover;
+
+
     }
     h2 {
       /* Positioning */
@@ -1103,11 +1106,12 @@ div.introducing-beauty-strip {
   background-image: url(../img/printing/introducing-beauty.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: #fff;
   /* Misc */
   @media screen and (max-width: 540px) {
     background-position: center;
-    background-size: initial;
+    background-size: cover;
   }
   h2 {
     /* Positioning */
