@@ -623,7 +623,7 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/face-to-face-ballast.jpg);
+    background-image: url(../img/clients/face-to-face-ballast-2-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -632,10 +632,44 @@ div.clients-page-header {
     @media screen and (max-width: 540px) {
       background-position: 60% center;
       background-size: cover;
-
-
+  }
+    h2 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      padding-top: 30px;
+      /* Typography */
+      text-align: center;
+      font-size: 62px;
+      line-height: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
+      /* Visual */
+      /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 42px;
+      }
 
     }
+  }
+
+  div.face-to-face-chameleon-strip {
+    /* Positioning */
+    /* Box-model */
+    height: 720px;
+    /* Typography */
+    /* Visual */
+    background-color: #000;
+    background-image: url(../img/clients/face-to-face-chameleon-2-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Misc */
+    @media screen and (max-width: 540px) {
+      background-position: 60% center;
+      background-size: cover;
+  }
     h2 {
       /* Positioning */
       /* Box-model */
@@ -654,7 +688,6 @@ div.clients-page-header {
       }
     }
   }
-
 
 
 div.bb-strip {
@@ -1111,7 +1144,7 @@ div.introducing-beauty-strip {
   color: #fff;
   /* Misc */
   @media screen and (max-width: 540px) {
-    background-position: 55% center;
+    background-position:  center;
     background-size: cover;
   }
   h2 {
