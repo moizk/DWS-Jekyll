@@ -6,6 +6,11 @@ google.maps.visualRefresh = true;
 var contactMap;
 
 function aboutInitialize() {
+  var mapDiv = document.getElementById('dws_about_page_map');
+  if ($(mapDiv).length < 1) {
+    return;
+  }
+
   var dwsCenter = new google.maps.LatLng(40.1545531, -99.1376119)
   var dwsOffice = new google.maps.LatLng(40.767795, -73.297847)
 
