@@ -641,6 +641,15 @@ div.clients-page-header {
       background-position: 60% center;
       background-size: cover;
     }
+    a {
+      color: #fff;
+      &:hover {
+        color: #2F79E6;
+      }
+    }
+    i {
+      font-size: 150px;
+    }
     h2 {
       /* Positioning */
       /* Box-model */
@@ -710,6 +719,15 @@ div.clients-page-header {
     @media screen and (max-width: 540px) {
       background-position: 60% center;
       background-size: cover;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        color: #2F79E6;
+      }
+    }
+    i {
+      font-size: 150px;
     }
     h2 {
       /* Positioning */
