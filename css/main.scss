@@ -631,7 +631,7 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/face-to-face-ballast-new.jpg);
+    background-image: url(../img/clients/face-to-face-ballast.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -648,8 +648,8 @@ div.clients-page-header {
       padding-top: 30px;
       /* Typography */
       text-align: center;
-      font-size: 62px;
-      line-height: 55px;
+      font-size: 70px;
+      line-height: 70px;
       font-weight: 600;
       text-transform: uppercase;
       /* Visual */
@@ -664,7 +664,8 @@ div.clients-page-header {
       margin-top: 0;
       margin-bottom: 30px;
       /* Typography */
-      font-size: 24px;
+      font-size: 50px;
+      font-weight: 600;
       font-style: italic;
       text-align: center;
       /* Visual */
@@ -672,6 +673,24 @@ div.clients-page-header {
       @media screen and (max-width: 540px) {
         font-size: 24px;
       }
+    }
+    h4 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      margin-bottom: 30px;
+      /* Typography */
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      /* Visual */
+      /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 24px;
+      }
+    }
+    img {
+      width: 150px;
     }
   }
 
@@ -682,7 +701,7 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/face-to-face-chameleon-new-3.jpg);
+    background-image: url(../img/clients/face-to-face-chameleon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -691,17 +710,16 @@ div.clients-page-header {
     @media screen and (max-width: 540px) {
       background-position: 60% center;
       background-size: cover;
-  }
+    }
     h2 {
       /* Positioning */
       /* Box-model */
       margin-top: 0;
-      margin-bottom: 4px;
-      padding-top: 60px;
+      padding-top: 30px;
       /* Typography */
       text-align: center;
-      font-size: 62px;
-      line-height: 55px;
+      font-size: 70px;
+      line-height: 70px;
       font-weight: 600;
       text-transform: uppercase;
       /* Visual */
@@ -716,7 +734,8 @@ div.clients-page-header {
       margin-top: 0;
       margin-bottom: 30px;
       /* Typography */
-      font-size: 24px;
+      font-size: 50px;
+      font-weight: 600;
       font-style: italic;
       text-align: center;
       /* Visual */
@@ -724,6 +743,24 @@ div.clients-page-header {
       @media screen and (max-width: 540px) {
         font-size: 24px;
       }
+    }
+    h4 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      margin-bottom: 30px;
+      /* Typography */
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      /* Visual */
+      /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 24px;
+      }
+    }
+    img {
+      width: 150px;
     }
   }
 

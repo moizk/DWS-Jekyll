@@ -11,13 +11,39 @@ title: Our Clients - DWS Printing Associates, Inc. - Label & Packaging Specialis
 
 
 <div class="face-to-face-strip">
-  <!--
-  <h2>Face to Face,<br> Coast to Coast</h2>
+  <h2>Face to Face,<br>Coast to Coast</h2>
   <h3>A Client Spotlight Series</h3>
-  <center>
-  <a href="clientspotlight.html"><button class="button btn-transparent btn-2x">Watch Episode I</button></a>
-</center> -->
+  <h4>Episode 1</h4>
+  <div class="text-center">
+    <a href="#" id="lord-jesus">
+      <img src="img/play.png" class="center-block img-responsive">
+    </a>
+  </div>
 </div>
+
+<div class="ballast-point-area" id="first-video">
+  <iframe id="ballast-point-video" src="//player.vimeo.com/video/164169616?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+$(function() {
+  $('.ballast-point-area').hide();
+  var bvideo = $('#ballast-point-video')
+  var player = new Vimeo.Player(bvideo);
+  $('#lord-jesus').on("click", function() {
+    $('.face-to-face-strip').hide();
+    $('.ballast-point-area').show();
+    player.play();
+    var onEnded = function() {
+      $('.ballast-point-area').hide();
+      $('.face-to-face-strip').show();
+    };
+    player.on('ended', onEnded);
+  });
+});
+</script>
 
 <div class="weare">
   <h3>Our Purpose And Mission <span>Is to help Tell your Story</span></h3>
@@ -91,13 +117,38 @@ title: Our Clients - DWS Printing Associates, Inc. - Label & Packaging Specialis
   <!-- Chameleon -->
 <
   <div class="face-to-face-chameleon-strip">
-  <!--  <h2>Face to Face, <br> Coast to Coast. </h2>
+    <h2>Face to Face,<br>Coast to Coast</h2>
     <h3>A Client Spotlight Series</h3>
-    <center>
-    <a href="clientspotlight-chameleon.html"><button class="button btn-transparent btn-2x">Watch The Film</button></a>
-  </center> -->
-
+    <h4>Episode 2</h4>
+    <div class="text-center">
+      <a href="#cham" id="lord-moses">
+        <img src="img/play.png" class="center-block img-responsive">
+      </a>
   </div>
+  </div>
+
+  <div class="chameleon-video-area" id="second-video" name="cham">
+    <iframe id="chameleon-video" src="//player.vimeo.com/video/177620477?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+  <script>
+  $(function() {
+    $('.chameleon-video-area').hide();
+    var cvideo = $('#chameleon-video')
+    var cplayer = new Vimeo.Player(cvideo);
+    $('#lord-moses').on("click", function() {
+      $('.face-to-face-chameleon-strip').hide();
+      $('.chameleon-video-area').show();
+      cplayer.play();
+      var conEnded = function() {
+        $('.chameleon-video-area').hide();
+        $('.face-to-face-chameleon-strip').show();
+      };
+      cplayer.on('ended', conEnded);
+    });
+  });
+  </script>
+
     <div class="client-strip">
       <div class="container">
         <div class="row">
@@ -291,3 +342,14 @@ title: Our Clients - DWS Printing Associates, Inc. - Label & Packaging Specialis
       </center>
     </div>
   </div>
+
+  <script>
+    $(document).ready(function(){
+      $("#first-video").fitVids();
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#second-video").fitVids();
+    });
+  </script>
