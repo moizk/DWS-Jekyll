@@ -11,10 +11,36 @@ title: Printing Capabilities - DWS Printing Associates, Inc. - Label & Packaging
 
 <div class="introducing-beauty-strip">
   <h2>Introducing, <br><i>Beauty</i></h2>
-  <center>
-  <a href="introducingbeauty.html"><button class="button btn-transparent btn-2x">Watch The Film</button></a>
-  </center>
+  <h3>Our Omet X6 10-Color Flexographic Press</h3>
+  <div class="text-center">
+    <a href="#" id="lord-jesus">
+      <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+    </a>
+  </div>
 </div>
+
+<div class="beauty-video-area" id="first-video">
+  <iframe id="beauty-video" src="//player.vimeo.com/video/154764266?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+$(function() {
+  $('.beauty-video-area').hide();
+  var bvideo = $('#beauty-video')
+  var player = new Vimeo.Player(bvideo);
+  $('#lord-jesus').on("click", function() {
+    $('.introducing-beauty-strip').hide();
+    $('.beauty-video-area').show();
+    player.play();
+    var onEnded = function() {
+      $('.beauty-video-area').hide();
+      $('.introducing-beauty-strip').show();
+    };
+    player.on('ended', onEnded);
+  });
+});
+</script>
 
 <div class="story-content">
   <h3 class="text-center smaller-nudge">Shrink Sleeve + Roll Fed</h3>
@@ -101,3 +127,9 @@ title: Printing Capabilities - DWS Printing Associates, Inc. - Label & Packaging
   <a href="contact.html"><button class="button btn-transparent btn-2x">Contact Us</button></a>
   </center>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $("#first-video").fitVids();
+  });
+</script>
