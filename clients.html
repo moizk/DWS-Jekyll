@@ -105,8 +105,7 @@ $(function() {
         <div class="row">
           <div class="col-sm-6">
             <br>
-            <p>You probably recognize the iconic “B” on the label, created by none other than Milton Glaser himself, of “I <3 ️NY” fame,  so you probably know the beer inside continues to be some of the freshest and most innovative on the market today, but did you know that Brooklyn Brewery now brews its magical beer in Sweden, Norway, and South Korea?  Soon they’ll even be brewing in Australia and Japan as well,  pretty cool, huh?</p>
-
+            <p>You probably recognize the iconic &ldquo;B&rdquo; on the label, created by none other than Milton Glaser himself, of &ldquo;I <3 ️NY&rdquo; fame, so you probably know the beer inside continues to be some of the freshest and most innovative on the market today, but did you know that Brooklyn Brewery now brews its magical beer in Sweden, Norway, and South Korea? Soon they’ll even be brewing in Australia and Japan as well, pretty cool, huh?</p>
           </div>
           <div class="col-sm-5 col-sm-push-1">
             <p class="pull-quote">From its local Brooklyn roots to its global craft brewing reach, Brooklyn Brewery is certainly spreading its wings, and we’re so proud to be a part of their continuing success.</p>
@@ -121,7 +120,7 @@ $(function() {
   <br><br>
 
   <!-- Chameleon -->
-<
+
   <div class="face-to-face-chameleon-strip">
     <h2>Face to Face,<br>Coast to Coast</h2>
     <h3>A Client Spotlight Series</h3>
@@ -130,7 +129,7 @@ $(function() {
       <a href="#cham" id="lord-moses">
         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
       </a>
-  </div>
+    </div>
   </div>
 
   <div class="chameleon-video-area" id="second-video" name="cham">
@@ -191,8 +190,6 @@ $(function() {
               <hr>
               <p>A little over a decade ago, Johannes von Trapp contemplated a brewery at his family’s hotel and resort in Stowe, Vermont - von Trapp Brewing is now an innovative brewery and 150-seat "Bierhall".  The Rolec brew house system will eventually produce 50,000 barrels of beer annually - including von Trapp Brewing's award-winning Bohemian Pilsner.</p>
               <hr>
-
-
               </ul>
               </div>
             </div>
@@ -210,7 +207,23 @@ $(function() {
       </div>
 
       <!-- Health Ade LLC -->
-      <img src="img/clients/health-ade.jpg" class="img-responsive big">
+
+      <div class="health-ade-strip">
+        <h2>Face to Face,<br>Coast to Coast</h2>
+        <h3>A Client Spotlight Series</h3>
+        <h4>Episode III</h4>
+        <div class="text-center">
+          <a href="#health" id="lord-genghis">
+            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="health-ade-video-area" id="third-video" name="health">
+        <iframe id="health-ade-video" src="//player.vimeo.com/video/164169616?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+
       <div class="client-strip">
         <div class="container">
           <br>
@@ -228,7 +241,6 @@ $(function() {
               <div class="copy col-md-6">
                 <br>
                 <p>Health Ade took kombucha to an entirely new level with its recent rebranding initiative.  Together, the Health Ade and DWS teams worked tirelessly to execute a fresh, new look that not only looks great, but feels great in your hand with its silky smooth matte lamination.  Even if you're not a kombucha lover, once you give Health Ade a try, you might be.</p>
-
               </div>
             </div>
             <br>
@@ -237,6 +249,24 @@ $(function() {
           </center>
         </div>
       </div>
+
+      <script>
+      $(function() {
+        $('.health-ade-video-area').hide();
+        var dvideo = $('#health-ade-video')
+        var dplayer = new Vimeo.Player(dvideo);
+        $('#lord-genghis').on("click", function() {
+          $('.health-ade-strip').hide();
+          $('.health-ade-video-area').show();
+          dplayer.play();
+          var conEnded = function() {
+            $('.health-ade-video-area').hide();
+            $('.health-ade-strip').show();
+          };
+          dplayer.on('ended', conEnded);
+        });
+      });
+      </script>
 
       <!-- Runa -->
         <div class="client-strip runa-strip">
@@ -326,6 +356,12 @@ $(function() {
       $("#second-video").fitVids();
     });
   </script>
+  <script>
+    $(document).ready(function(){
+      $("#third-video").fitVids();
+    });
+  </script>
+
 
   <!-- Purity -->
    <div class="client-strip">
@@ -341,7 +377,7 @@ $(function() {
         <div class="col-md-6">
           <br>
           <p>Purity Organic is a leader in the organic juice market, and Superjuice is the latest in their lineup.  They opted for glass bottles and predominantly white, clean graphics for their new line of HPP juices.</p>
-        
+
         </div>
         <div class="col-md-6">
           <p class="pull-quote">You probably recognize them from their distribution in Whole Foods and speciality markets across the country. Purity Organic products are Gluten Free, GMO Free, Kosher, and USDA Certified Organic.</p>
