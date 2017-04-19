@@ -320,6 +320,66 @@ $(function() {
     </div>
   </div>
 
+  <!-- Long Trail Brewing -->
+  <div class="long-trail-brewing-strip">
+    <h2>Face to Face,<br>Coast to Coast</h2>
+    <h3>A Client Spotlight Series</h3>
+    <h4>Episode IV</h4>
+    <div class="text-center">
+      <a href="#longTrailBrewing" id="lordy-lord">
+        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="long-trail-brewing-area" id="fourth-video" name="longTrailBrewing">
+    <iframe id="long-trail-brewing-video" src="//player.vimeo.com/video/206149767?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+  <div class="client-strip">
+    <br><center><img src="img/clients/longtrail.png" class="img-responsive"></center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 col-sm-push-1">
+          <div class="copy">
+          <h4 class="text-center">Long Trail Brewing</h4>
+          <hr>
+          <p>Sustainability and consciousness pervades every aspect of Long Trail Brewing. In fact, did you know that Long Trail uses a closed loop renewable energy system through partnerships with local dairy farms to power their facility (more on Cow Power <a href="http://longtrail.com/age-verification?destination=eco-brew">HERE</a>), and has one of the lowest water usage ratios in the brewing industry? Now that's progressive! </p>
+          <hr>
+          <br>
+          </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <br><br>
+          <p class="pull-quote">Long Trail was one of the earliest adopters of DWS` 100% Post-Consumer Recycled, Wet Strength Legacy Label</p>
+        </div>
+      </div>
+      <br>
+      <center>
+        <a href="https://www.longtrail.com/" target="_blank" class="button btn-white btn-2x">Visit Long Trail Brewing</a>
+      </center>
+    </div>
+  </div>
+
+  <script>
+  $(function() {
+    $('.long-trail-brewing-area').hide();
+    var ltbvideo = $('#long-trail-brewing-video')
+    var ltbplayer = new Vimeo.Player(ltbvideo);
+    $('#lordy-lord').on("click", function() {
+      $('.long-trail-brewing-strip').hide();
+      $('.long-trail-brewing-area').show();
+      ltbplayer.play();
+      var ltbOnEnded = function() {
+        $('.long-trail-brewing-area').hide();
+        $('.long-trial-brewing-strip').show();
+      };
+      ltbplayer.on('ended', ltbOnEnded);
+    });
+  });
+  </script>
+
 <!-- Gold's Horseradish -->
   <img src="img/clients/horse-radish.jpg" class="img-responsive big">
   <div class="client-strip">
@@ -359,6 +419,7 @@ $(function() {
   <script>
     $(document).ready(function(){
       $("#third-video").fitVids();
+      $("#fourth-video").fitVids();
     });
   </script>
 
