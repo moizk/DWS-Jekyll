@@ -795,9 +795,11 @@ div.clients-page-header {
     background-position: center;
     color: #fff;
     /* Misc */
+    @media screen and (max-width: 1518px) {
+      background-size: inherit;
+    }
     @media screen and (max-width: 540px) {
       background-position: 60% center;
-      background-size: cover;
     }
     a {
       color: #fff;
