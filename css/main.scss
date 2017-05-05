@@ -991,7 +991,7 @@ div.runa-strip {
 div.client-strip {
   /* Positioning */
   /* Box-model */
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   /* Typography */
   /* Visual */
   /* Misc */
@@ -1000,6 +1000,7 @@ div.client-strip {
   }
   div.copy {
     max-width: 500px;
+    margin: auto;
   }
   img.resized {
     max-height: 500px;
@@ -1007,8 +1008,8 @@ div.client-strip {
   h4 {
     /* Positioning */
     /* Box-model */
-    padding-top: 50px;
-    padding-bottom: 15px;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 15px;*/
     /* Typography */
     font-size: 50px;
     font-weight: 100;
@@ -1041,12 +1042,12 @@ div.client-strip {
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
-    padding-top: 15px;
+    margin-top: 65px;
     margin-bottom: 15px;
     padding-bottom: 25px;
     /* Typography */
     font-family: 'proxima-nova', serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 100;
     line-height: 1.4;
     /* Visual */
@@ -2205,12 +2206,71 @@ div.guide-container {
   -webkit-transition: all 400ms ease-in-out;
      -moz-transition: all 400ms ease-in-out;
           transition: all 400ms ease-in-out;
-  &:active, &:focus {
-    /* Positioning */
-    /* Box-model */
-    /* Typography */
-    /* Visual */
-    border-color: #2f79e7;
-    /* Misc */
+    &:active, &:focus {
+      /* Positioning */
+      /* Box-model */
+      /* Typography */
+      /* Visual */
+      border-color: #2f79e7;
+      /* Misc */
+    }
   }
-}
+
+  .responsive-logo {
+    max-width: 40%;
+    max-height: 200px;
+  }
+
+  .responsive-logo-b {
+    max-width: 50%;
+    max-height: 200px;
+  }
+
+  div.client-strip div.col-sm-7 {
+    margin-top: 30px;
+  }
+
+  div.client-strip div.col-sm-7 p {
+    text-align: justify;
+  }
+
+  @media screen and (min-width: 768px) {
+    div.client-strip .col-sm-4 {
+      position: relative;
+      display: inline-block;
+      margin-left: 20px;
+    }
+    div.client-strip .col-sm-7 {
+      position: relative;
+      display: inline-block;
+    }
+    div.client-strip .col-sm-push-1 {
+      left: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    div.client-strip .col-sm-7 {
+      width: 50%;
+    }
+    div.client-strip .col-sm-4 {
+      margin-left: 0px;
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 1008px) {
+    div.client-strip div.copy {
+      margin: auto;
+    }
+    div.client-strip div.col-sm-7 {
+      margin-top: 0;
+    }
+    div.client-strip div.col-sm-7, div.client-strip div.col-sm-4 {
+      width: 100%;
+      left: 0;
+    }
+    div.client-strip p.pull-quote {
+      margin-top: 0;
+    }
+  }
