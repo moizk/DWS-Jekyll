@@ -331,7 +331,7 @@ $(function() {
   </div>
 
   <!-- Long Trail Brewing -->
-  <div class="long-trail-brewing-strip">
+  <div class="long-trail-brewing-strip" id="longTrailBrewing">
     <h2>Face to Face,<br>Coast to Coast</h2>
     <h3>A Client Spotlight Series</h3>
     <h4>Episode IV</h4>
@@ -356,12 +356,10 @@ $(function() {
           <hr>
           <p>Sustainability and consciousness pervades every aspect of Long Trail Brewing. In fact, did you know that Long Trail uses a closed loop renewable energy system through partnerships with local dairy farms to power their facility (more on Cow Power <a href="http://longtrail.com/age-verification?destination=eco-brew">HERE</a>), and has one of the lowest water usage ratios in the brewing industry? Now that's progressive! </p>
           <hr>
-          <br>
           </ul>
           </div>
         </div>
         <div class="col-sm-4">
-          <br><br>
           <p class="pull-quote">Long Trail was one of the earliest adopters of DWS` 100% Post-Consumer Recycled, Wet Strength Legacy Label</p>
         </div>
       </div>
@@ -377,7 +375,13 @@ $(function() {
     $('.long-trail-brewing-area').hide();
     var ltbvideo = $('#long-trail-brewing-video')
     var ltbplayer = new Vimeo.Player(ltbvideo);
-    $('#lordy-lord').on("click", function() {
+    $('#lordy-lord').on("click", playLongTrailVideo);
+    if (window.location.hash = "#longTrailBrewing") {
+      setTimeout(function() {
+        playLongTrailVideo();
+      }, 30);
+    }
+    function playLongTrailVideo() {
       $('.long-trail-brewing-strip').hide();
       $('.long-trail-brewing-area').show();
       ltbplayer.play();
@@ -386,7 +390,7 @@ $(function() {
         $('.long-trial-brewing-strip').show();
       };
       ltbplayer.on('ended', ltbOnEnded);
-    });
+    }
   });
   </script>
 
