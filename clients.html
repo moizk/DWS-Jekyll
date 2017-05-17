@@ -193,11 +193,10 @@ $(function() {
           <div class="row">
             <div class="col-sm-7 col-sm-push-1">
               <div class="copy">
-              <h4 class="text-center">von Trapp Brewing</h4>
-              <hr>
-              <p>A little over a decade ago, Johannes von Trapp contemplated a brewery at his family’s hotel and resort in Stowe, Vermont - von Trapp Brewing is now an innovative brewery and 150-seat "Bierhall".  The Rolec brew house system will eventually produce 50,000 barrels of beer annually - including von Trapp Brewing's award-winning Bohemian Pilsner.</p>
-              <hr>
-              </ul>
+                <h4 class="text-center">von Trapp Brewing</h4>
+                <hr>
+                <p>A little over a decade ago, Johannes von Trapp contemplated a brewery at his family’s hotel and resort in Stowe, Vermont - von Trapp Brewing is now an innovative brewery and 150-seat "Bierhall".  The Rolec brew house system will eventually produce 50,000 barrels of beer annually - including von Trapp Brewing's award-winning Bohemian Pilsner.</p>
+                <hr>
               </div>
             </div>
             <div class="col-sm-4">
@@ -352,11 +351,10 @@ $(function() {
       <div class="row">
         <div class="col-sm-7 col-sm-push-1">
           <div class="copy">
-          <h4 class="text-center">Long Trail Brewing</h4>
-          <hr>
-          <p>Sustainability and consciousness pervades every aspect of Long Trail Brewing. In fact, did you know that Long Trail uses a closed loop renewable energy system through partnerships with local dairy farms to power their facility (more on Cow Power <a href="http://longtrail.com/age-verification?destination=eco-brew">HERE</a>), and has one of the lowest water usage ratios in the brewing industry? Now that's progressive! </p>
-          <hr>
-          </ul>
+            <h4 class="text-center">Long Trail Brewing</h4>
+            <hr>
+            <p>Sustainability and consciousness pervades every aspect of Long Trail Brewing. In fact, did you know that Long Trail uses a closed loop renewable energy system through partnerships with local dairy farms to power their facility (more on Cow Power <a href="http://longtrail.com/age-verification?destination=eco-brew">HERE</a>), and has one of the lowest water usage ratios in the brewing industry? Now that's progressive! </p>
+            <hr>
           </div>
         </div>
         <div class="col-sm-4">
@@ -375,13 +373,7 @@ $(function() {
     $('.long-trail-brewing-area').hide();
     var ltbvideo = $('#long-trail-brewing-video')
     var ltbplayer = new Vimeo.Player(ltbvideo);
-    $('#lordy-lord').on("click", playLongTrailVideo);
-    if (window.location.hash = "#longTrailBrewing") {
-      setTimeout(function() {
-        playLongTrailVideo();
-      }, 30);
-    }
-    function playLongTrailVideo() {
+    $('#lordy-lord').on("click", function () {
       $('.long-trail-brewing-strip').hide();
       $('.long-trail-brewing-area').show();
       ltbplayer.play();
@@ -390,7 +382,7 @@ $(function() {
         $('.long-trial-brewing-strip').show();
       };
       ltbplayer.on('ended', ltbOnEnded);
-    }
+    });
   });
   </script>
 

@@ -50,12 +50,38 @@ description: We are the last step in the visions of a lot of passionate people. 
     <h3>A Client Spotlight Series</h3>
     <h4>Episode IV</h4>
     <div class="text-center">
-      <a href="clients.html#longTrailBrewing" id="lord-almighty">
+      <a href="#longTrailBrewing" id="lord-almighty">
         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
       </a>
     </div>
   </div>
+
+  <div class="long-trail-brewing-area" id="fourth-video-about" name="longTrailBrewing">
+    <iframe id="long-trail-brewing-video-about" src="//player.vimeo.com/video/206149767?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 </div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+$(document).ready(function(){
+  $("#fourth-video-about").fitVids();
+});
+$(function() {
+  $('.long-trail-brewing-area').hide();
+  var ltbVideo = $('#long-trail-brewing-video-about')
+  var ltbPlayer = new Vimeo.Player(ltbVideo);
+  $('#lord-almighty').on("click", function() {
+    $('.long-trail-brewing-gif').hide();
+    $('.long-trail-brewing-area').show();
+    ltbPlayer.play();
+    var ltbOnEnded = function() {
+      $('.long-trail-brewing-area').hide();
+      $('.long-trial-brewing-gif').show();
+    };
+    ltbPlayer.on('ended', ltbOnEnded);
+  });
+});
+</script>
 
 <div class="weare">
   <h3>We are committed to <span>keeping the legacy alive</span></h3>
