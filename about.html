@@ -45,7 +45,7 @@ description: We are the last step in the visions of a lot of passionate people. 
   <div class="reach-header">
     <h3><span>We're there for you</span> face to face, coast to coast.</h3>
   </div>
-  <div class="long-trail-brewing-gif">
+  <!-- <div class="long-trail-brewing-gif">
     <h2>Face to Face,<br>Coast to Coast</h2>
     <h3>A Client Spotlight Series</h3>
     <h4>Episode IV</h4>
@@ -54,33 +54,75 @@ description: We are the last step in the visions of a lot of passionate people. 
         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
       </a>
     </div>
+  </div> -->
+
+  <!-- <div class="long-trail-brewing-area" id="fourth-video-about" name="longTrailBrewing">
+    <iframe id="long-trail-brewing-video-about" src="//player.vimeo.com/video/206149767?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div> -->
+  <div class="mobile-frame visible-sm visible-xs index-film-loop">
+    <div class="call-to-action-message">
+      <h2>Your Labels,<br>Our Story.</h2>
+      <center>
+      <a href="#about-page-video"><button class="button btn-transparent btn-2x">Watch the film</button></a>
+      </center>
+    </div>
   </div>
 
-  <div class="long-trail-brewing-area" id="fourth-video-about" name="longTrailBrewing">
-    <iframe id="long-trail-brewing-video-about" src="//player.vimeo.com/video/206149767?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <div id="thing-with-videos" class="index-film-loop hidden-sm hidden-xs">
+    <video width="100%" height="100%" autoplay preload loop>
+      <!--<source src="video/wat.webm" type="video/webm">-->
+      <source src="http://dws-printing.s3.amazonaws.com/home.mp4" type="video/mp4">
+      <!--<source src="films/website-roll-2017.mp4" type="video/mp4" download>-->
+    </video>
+    <div class="call-to-action-message">
+      <h2>Your Labels, <br>Our Story.</h2>
+      <center>
+      <a href="#about-page-video" id="lord-almighty"><button class="button btn-transparent btn-2x">Watch the film</button></a>
+      </center>
+    </div>
+  </div>
+
+  <div id="about-page-video">
+    <iframe id="about-video-iframe" src="//player.vimeo.com/video/108372637?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 </div>
 
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>
-$(document).ready(function(){
-  $("#fourth-video-about").fitVids();
-});
-$(function() {
-  $('.long-trail-brewing-area').hide();
-  var ltbVideo = $('#long-trail-brewing-video-about')
-  var ltbPlayer = new Vimeo.Player(ltbVideo);
-  $('#lord-almighty').on("click", function() {
-    $('.long-trail-brewing-gif').hide();
-    $('.long-trail-brewing-area').show();
-    ltbPlayer.play();
-    var ltbOnEnded = function() {
-      $('.long-trail-brewing-area').hide();
-      $('.long-trail-brewing-gif').show();
-    };
-    ltbPlayer.on('ended', ltbOnEnded);
+  // document).ready(function(){
+  //   $("#fourth-video-about").fitVids();
+  // });
+  // $(function() {
+  //   $('.long-trail-brewing-area').hide();
+  //   var ltbVideo = $('#long-trail-brewing-video-about')
+  //   var ltbPlayer = new Vimeo.Player(ltbVideo);
+  //   $('#lord-almighty').on("click", function() {
+  //     $('.long-trail-brewing-gif').hide();
+  //     $('.long-trail-brewing-area').show();
+  //     ltbPlayer.play();
+  //     var ltbOnEnded = function() {
+  //       $('.long-trail-brewing-area').hide();
+  //       $('.long-trail-brewing-gif').show();
+  //     };
+  //     ltbPlayer.on('ended', ltbOnEnded);
+  //   });
+  // });
+  $(function () {
+    $("#about-page-video").fitVids();
+    $('#about-page-video').hide();
+    var avfVideo = $('#about-video-iframe')
+    var avfPlayer = new Vimeo.Player(avfVideo);
+    $('#lord-almighty').on("click", function() {
+      $('#thing-with-videos').hide();
+      $('#about-page-video').show();
+      avfPlayer.play();
+      var avfOnEnded = function() {
+        $('#about-page-video').hide();
+        $('#thing-with-videos').show();
+      };
+      avfPlayer.on('ended', avfOnEnded);
+    });
   });
-});
 </script>
 
 <div class="weare">
