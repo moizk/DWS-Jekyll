@@ -70,10 +70,25 @@ $(function() {
 </script>
 
 <!-- Califia Farms -->
+<div class="califia-farms-strip">
+  <h2>Face to Face,<br>Coast to Coast</h2>
+  <h3>A Client Spotlight Series</h3>
+  <h4>Episode II</h4>
+  <div class="text-center">
+    <a href="#califiaFarms" id="lord-almighty">
+      <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+
+<div class="califia-farms-area" id="fifth-video" name="califiaFarms">
+  <iframe id="califia-farms-video" src="//player.vimeo.com/video/219406119?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
 <div class="client-strip">
-  <center>
+  <!-- <center>
     <img src="img/clients/califia-final.jpg" class="img-responsive">
-  </center>
+  </center> -->
   <div class="container">
     <br>
     <center><img src="img/clients/califia-logo.png" class="img-responsive responsive-logo"></center>
@@ -96,6 +111,24 @@ $(function() {
     </center>
   </div>
 </div>
+
+<script>
+  $(function() {
+    $('.califia-farms-area').hide();
+    var cfVideo = $('#califia-farms-video')
+    var cfPlayer = new Vimeo.Player(cfVideo);
+    $('#lord-almighty').on("click", function() {
+      $('.califia-farms-strip').hide();
+      $('.califia-farms-area').show();
+      cfPlayer.play();
+      var cfEnded = function() {
+        $('.califia-farms-area').hide();
+        $('.califia-farms-strip').show();
+      };
+      cfPlayer.on('ended', cfEnded);
+    });
+  });
+</script>
 
   <!-- Brooklyn Brewery -->
   <div class="client-strip">
@@ -131,7 +164,7 @@ $(function() {
   <div class="face-to-face-chameleon-strip">
     <h2>Face to Face,<br>Coast to Coast</h2>
     <h3>A Client Spotlight Series</h3>
-    <h4>Episode II</h4>
+    <h4>Episode III</h4>
     <div class="text-center">
       <a href="#cham" id="lord-moses">
         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
@@ -215,7 +248,7 @@ $(function() {
       <div class="health-ade-strip">
         <h2>Face to Face,<br>Coast to Coast</h2>
         <h3>A Client Spotlight Series</h3>
-        <h4>Episode III</h4>
+        <h4>Episode IV</h4>
         <div class="text-center">
           <a href="#health" id="lord-genghis">
             <i class="fa fa-play-circle-o" aria-hidden="true"></i>
@@ -333,7 +366,7 @@ $(function() {
   <div class="long-trail-brewing-strip" id="longTrailBrewing">
     <h2>Face to Face,<br>Coast to Coast</h2>
     <h3>A Client Spotlight Series</h3>
-    <h4>Episode IV</h4>
+    <h4>Episode V</h4>
     <div class="text-center">
       <a href="#longTrailBrewing" id="lordy-lord">
         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
@@ -418,17 +451,10 @@ $(function() {
   <script>
     $(document).ready(function(){
       $("#first-video").fitVids();
-    });
-  </script>
-  <script>
-    $(document).ready(function(){
       $("#second-video").fitVids();
-    });
-  </script>
-  <script>
-    $(document).ready(function(){
       $("#third-video").fitVids();
       $("#fourth-video").fitVids();
+      $("#fifth-video").fitVids();
     });
   </script>
 

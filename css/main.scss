@@ -88,7 +88,6 @@ div.index-film-loop {
   }
 }
 
-
 nav.top-navigation {
   /* Positioning */
   /* Box-model */
@@ -723,6 +722,7 @@ div.clients-page-header {
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-shadow: 1px 0px 8px black;
     /* Misc */
     @media screen and (max-width: 540px) {
       background-position: 60% center;
@@ -802,6 +802,87 @@ div.clients-page-header {
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-shadow: 1px 0px 8px black;
+    /* Misc */
+    @media screen and (max-width: 540px) {
+      background-position: 60% center;
+      background-size: cover;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        color: #2F79E6;
+      }
+    }
+    i {
+      font-size: 150px;
+    }
+    h2 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      padding-top: 30px;
+      /* Typography */
+      text-align: center;
+      font-size: 70px;
+      line-height: 70px;
+      font-weight: 600;
+      text-transform: uppercase;
+      /* Visual */
+      /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 42px;
+      }
+    }
+    h3 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      margin-bottom: 30px;
+      /* Typography */
+      font-size: 50px;
+      font-weight: 600;
+      font-style: italic;
+      text-align: center;
+      /* Visual */
+      /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 24px;
+      }
+    }
+    h4 {
+      /* Positioning */
+      /* Box-model */
+      margin-top: 0;
+      margin-bottom: 30px;
+      /* Typography */
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      /* Visual */
+      /* Misc */
+      @media screen and (max-width: 540px) {
+        font-size: 24px;
+      }
+    }
+    img {
+      width: 150px;
+    }
+  }
+
+  div.califia-farms-strip {
+    /* Positioning */
+    /* Box-model */
+    height: 720px;
+    /* Typography */
+    /* Visual */
+    background-color: #000;
+    background-image: url(../img/clients/califia-final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 0px 8px black;
     /* Misc */
     @media screen and (max-width: 540px) {
       background-position: 60% center;
@@ -881,6 +962,7 @@ div.clients-page-header {
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-shadow: 1px 0px 8px black;
     /* Misc */
     @media screen and (max-width: 1518px) {
       background-size: inherit;
@@ -962,6 +1044,7 @@ div.clients-page-header {
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-shadow: 1px 0px 8px black;
     /* Misc */
     @media screen and (max-width: 540px) {
       background-position: 60% center;
@@ -1942,25 +2025,59 @@ div.contact-long-strip {
 
 div.index-strip {
   position: relative;
-  background: none;
+  // background: none;
   color: #FFF;
   height: 100vh;
+  overflow: hidden;
   video {
     -webkit-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--ms-transform: translateX(-50%) translateY(-50%);
--o-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-position: absolute;
-top: 50%;
-left: 50%;
-min-width: 100vw;
-min-height: 100vh;
-width: auto;
-height: auto;
-z-index: -100;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -100;
   }
+}
 
+div.no-bg {
+  background: none;
+}
+
+div.face-to-face-strip.index-strip {
+  background-image: url(../img/clients/ballastPoster.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.califia-farms-strip.index-strip {
+  background-image: url(../img/clients/califiaPoster.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.face-to-face-chameleon-strip.index-strip {
+  background-image: url(../img/clients/chameleonPoster.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.health-ade-strip.index-strip {
+  background-image: url(../img/clients/healthAdePoster.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.long-trail-brewing-strip.index-strip {
+  background-image: url(../img/clients/longTrailPoster.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*****************************************************************************/
