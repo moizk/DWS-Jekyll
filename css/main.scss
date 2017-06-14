@@ -111,6 +111,7 @@ nav.top-navigation {
     margin-bottom: 0;
     max-width: 110px;
     max-height: 110px;
+    padding: 6px;
   }
   h5 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif;
@@ -2050,31 +2051,31 @@ div.no-bg {
   background: none;
 }
 
-div.face-to-face-strip.index-strip {
+div.face-to-face-strip.index-strip.bg-image {
   background-image: url(../img/clients/ballastPoster.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.califia-farms-strip.index-strip {
+div.califia-farms-strip.index-strip.bg-image {
   background-image: url(../img/clients/califiaPoster.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.face-to-face-chameleon-strip.index-strip {
+div.face-to-face-chameleon-strip.index-strip.bg-image {
   background-image: url(../img/clients/chameleonPoster.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.health-ade-strip.index-strip {
+div.health-ade-strip.index-strip.bg-image {
   background-image: url(../img/clients/healthAdePoster.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.long-trail-brewing-strip.index-strip {
+div.long-trail-brewing-strip.index-strip.bg-image {
   background-image: url(../img/clients/longTrailPoster.png);
   background-repeat: no-repeat;
   background-size: cover;

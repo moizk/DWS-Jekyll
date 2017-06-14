@@ -7,7 +7,7 @@ $(document).ready(function(){
   var bvideo = $('#ballast-point-video')
   var player = new Vimeo.Player(bvideo);
   $('#lord-jesus').on("click", function() {
-    pauseAllVids();
+    //pauseAllVids();
     $('.face-to-face-strip').hide();
     $('.ballast-point-area').show();
     player.play();
@@ -24,7 +24,7 @@ $(document).ready(function(){
   var cvideo = $('#chameleon-video')
   var cplayer = new Vimeo.Player(cvideo);
   $('#lord-moses').on("click", function() {
-    pauseAllVids();
+    //pauseAllVids();
     $('.face-to-face-chameleon-strip').hide();
     $('.chameleon-video-area').show();
     cplayer.play();
@@ -41,7 +41,7 @@ $(document).ready(function(){
   var dvideo = $('#health-ade-video')
   var dplayer = new Vimeo.Player(dvideo);
   $('#lord-genghis').on("click", function() {
-    pauseAllVids();
+    //pauseAllVids();
     $('.health-ade-strip').hide();
     $('.health-ade-video-area').show();
     dplayer.play();
@@ -58,7 +58,7 @@ $(document).ready(function(){
   var ltbvideo = $('#long-trail-brewing-video')
   var ltbplayer = new Vimeo.Player(ltbvideo);
   $('#lordy-lord').on("click", function () {
-    pauseAllVids();
+    //pauseAllVids();
     $('.long-trail-brewing-strip').hide();
     $('.long-trail-brewing-area').show();
     ltbplayer.play();
@@ -75,7 +75,7 @@ $(document).ready(function(){
   var cfvideo = $('#califia-video')
   var cfplayer = new Vimeo.Player(cfvideo);
   $('#lord-vadar').on("click", function () {
-    pauseAllVids();
+    //pauseAllVids();
     $('.califia-farms-strip').hide();
     $('.califia-video-area').show();
     cfplayer.play();
@@ -203,23 +203,27 @@ $(window).resize(function() {
   }
 });
 
+if ($(window).width() < 991) {
+  $("div.index-strip").removeClass("no-bg");
+} 
+
 $("#ballastVid")[0].onloadedmetadata = function() {
-    $("div.face-to-face-strip.index-strip").css("background-image", "none");
+    $("div.face-to-face-strip.index-strip").removeClass("bg-image");
 };
 
 $("#califiaVid")[0].onloadedmetadata = function() {
-    $("div.califia-farms-strip.index-strip").css("background-image", "none");
+    $("div.califia-farms-strip.index-strip").removeClass("bg-image");
 };
 
 $("#chameleonVid")[0].onloadedmetadata = function() {
-    $("div.face-to-face-chameleon-strip.index-strip").css("background-image", "none");
+    $("div.face-to-face-chameleon-strip.index-strip").removeClass("bg-image");
 };
 
 $("#healthAdeVid")[0].onloadedmetadata = function() {
-    $("div.health-ade-strip.index-strip").css("background-image", "none");
+    $("div.health-ade-strip.index-strip").removeClass("bg-image");
 };
 
 $("#longTrailVid")[0].onloadedmetadata = function() {
-    $("div.long-trail-brewing-strip.index-strip").css("background-image", "none");
+    $("div.long-trail-brewing-strip.index-strip").removeClass("bg-image");
 };
 });
