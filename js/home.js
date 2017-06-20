@@ -86,144 +86,154 @@ $(document).ready(function(){
     cfplayer.on('ended', cfOnEnded);
   });
 
-//processScroll();
-var lastScrollTop = 0;
-var goToCalled = false;
+  //processScroll();
+  var lastScrollTop = 0;
+  var goToCalled = false;
 
-function scrollEvent() {
-  $(window).scroll(function(event) {
-    var st = $(this).scrollTop();
-    if (!goToCalled) {
-    	goToCalled = true;
-      if (st > lastScrollTop) {
-        // downscroll code
-        getVisible("down");
+  function scrollEvent() {
+    $(window).scroll(function(event) {
+      var st = $(this).scrollTop();
+      if (!goToCalled) {
+      	goToCalled = true;
+        if (st > lastScrollTop) {
+          // downscroll code
+          getVisible("down");
+        } else {
+          // upscroll code
+          getVisible("up");
+        }
       } else {
-        // upscroll code
-        getVisible("up");
+        goToCalled = false;
+      }
+    });
+  }
+
+  function getVisible(direction) {
+    var sectionsArr = [$("#ballastStrip"), $("#califiaStrip"), $("#chameleonStrip"), $("#healthAdeStrip"), $("#longTrailStrip")],
+      vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#healthAdeVid"), $("#longTrailVid")],
+      scrollTop = $(this).scrollTop(),
+      scrollBot = scrollTop + $(this).height(),
+      elTop = 0,
+      elBottom = 0,
+      visibleTop = 0,
+      visibleBottom = 0,
+      mostInView = 0,
+      //idInView = "section1",
+      nextId,
+      prevId,
+      index;
+    for (var i = 0, length = sectionsArr.length; i < length; i++) {
+      elTop = sectionsArr[i].offset().top;
+      elBottom = elTop + sectionsArr[i].outerHeight();
+      visibleTop = elTop < scrollTop ? scrollTop : elTop;
+      visibleBottom = elBottom > scrollBot ? scrollBot : elBottom;
+      heightInView = visibleBottom - visibleTop;
+      if (heightInView > mostInView) {
+        //idInView = sectionsArr[i][0].id;
+        index = i;
+        nextId = (typeof sectionsArr[i + 1] !== "undefined") ? sectionsArr[i+1][0].id : "";
+        prevId = (typeof sectionsArr[i - 1] !== "undefined") ? sectionsArr[i-1][0].id : "";
+        mostInView = heightInView;
+      }
+    }
+    //console.log(direction);
+    if (direction === "up") {
+      if (prevId !== "") {
+        playVid(vidArr, vidArr[index - 1]);
+        goToByScroll(prevId);
       }
     } else {
-      goToCalled = false;
+      if (nextId !== "") {
+        playVid(vidArr, vidArr[index + 1]);
+        goToByScroll(nextId);
+      }
+    }
+  }
+
+  function goToByScroll(id) {
+    //goToCalled = true;
+    $(window).off("scroll");
+    //disable_scroll();
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate({
+        scrollTop: $("#" + id).offset().top - 110
+      },
+      'slow',
+      function() {
+        lastScrollTop = $(window).scrollTop();
+        setTimeout(function() {
+        	scrollEvent();
+        },50);
+        //enable_scroll();
+      });
+  }
+
+  function playVid(arr, vid) {
+    vid[0].play();
+    for (var i = 0, length = arr.length; i < length; i++) {
+      if (arr[i] !== vid) {
+        arr[i][0].pause();                 // pause video not in view
+      }
+    }
+  }
+
+  function pauseAllVids() {
+    $("#ballastVid")[0].pause();
+    $("#califiaVid")[0].pause();
+    $("#chameleonVid")[0].pause();
+    $("#healthAdeVid")[0].pause();
+    $("#longTrailVid")[0].pause();
+  }
+
+  //scrollEvent();
+  // vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#healthAdeVid"), $("#longTrailVid")];
+  // for (var i = 0; i < vidArr.length; i++) {
+  //   setTimeout(function () {
+  //
+  //   }, 1000);
+  // }
+  // window resize event
+  $(window).resize(function() {
+    if ($(window).width() < 991) {
+      $("div.index-strip").css("height", "100vh");
+      $("div.index-strip").removeClass("no-bg");
+    } else {
+      heightOfVideo();
+      $("div.index-strip").addClass("no-bg");
     }
   });
-}
 
-function getVisible(direction) {
-  var sectionsArr = [$("#ballastStrip"), $("#califiaStrip"), $("#chameleonStrip"), $("#healthAdeStrip"), $("#longTrailStrip")],
-    vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#healthAdeVid"), $("#longTrailVid")],
-    scrollTop = $(this).scrollTop(),
-    scrollBot = scrollTop + $(this).height(),
-    elTop = 0,
-    elBottom = 0,
-    visibleTop = 0,
-    visibleBottom = 0,
-    mostInView = 0,
-    //idInView = "section1",
-    nextId,
-    prevId,
-    index;
-  for (var i = 0, length = sectionsArr.length; i < length; i++) {
-    elTop = sectionsArr[i].offset().top;
-    elBottom = elTop + sectionsArr[i].outerHeight();
-    visibleTop = elTop < scrollTop ? scrollTop : elTop;
-    visibleBottom = elBottom > scrollBot ? scrollBot : elBottom;
-    heightInView = visibleBottom - visibleTop;
-    if (heightInView > mostInView) {
-      //idInView = sectionsArr[i][0].id;
-      index = i;
-      nextId = (typeof sectionsArr[i + 1] !== "undefined") ? sectionsArr[i+1][0].id : "";
-      prevId = (typeof sectionsArr[i - 1] !== "undefined") ? sectionsArr[i-1][0].id : "";
-      mostInView = heightInView;
-    }
-  }
-  //console.log(direction);
-  if (direction === "up") {
-    if (prevId !== "") {
-      playVid(vidArr, vidArr[index - 1]);
-      goToByScroll(prevId);
-    }
-  } else {
-    if (nextId !== "") {
-      playVid(vidArr, vidArr[index + 1]);
-      goToByScroll(nextId);
-    }
-  }
-}
-
-function goToByScroll(id) {
-  //goToCalled = true;
-  $(window).off("scroll");
-  //disable_scroll();
-  // Remove "link" from the ID
-  id = id.replace("link", "");
-  // Scroll
-  $('html,body').animate({
-      scrollTop: $("#" + id).offset().top - 110
-    },
-    'slow',
-    function() {
-      lastScrollTop = $(window).scrollTop();
-      setTimeout(function() {
-      	scrollEvent();
-      },50);
-      //enable_scroll();
-    });
-}
-
-function playVid(arr, vid) {
-  vid[0].play();
-  for (var i = 0, length = arr.length; i < length; i++) {
-    if (arr[i] !== vid) {
-      arr[i][0].pause();                 // pause video not in view
-    }
-  }
-}
-
-function pauseAllVids() {
-  $("#ballastVid")[0].pause();
-  $("#califiaVid")[0].pause();
-  $("#chameleonVid")[0].pause();
-  $("#healthAdeVid")[0].pause();
-  $("#longTrailVid")[0].pause();
-}
-
-//scrollEvent();
-// vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#healthAdeVid"), $("#longTrailVid")];
-// for (var i = 0; i < vidArr.length; i++) {
-//   setTimeout(function () {
-//
-//   }, 1000);
-// }
-// window resize event
-$(window).resize(function() {
   if ($(window).width() < 991) {
     $("div.index-strip").removeClass("no-bg");
   } else {
-    $("div.index-strip").addClass("no-bg");
+    heightOfVideo();
   }
-});
 
-if ($(window).width() < 991) {
-  $("div.index-strip").removeClass("no-bg");
-} 
+  $("#ballastVid")[0].onloadedmetadata = function() {
+      $("div.face-to-face-strip.index-strip").removeClass("bg-image");
+  };
 
-$("#ballastVid")[0].onloadedmetadata = function() {
-    $("div.face-to-face-strip.index-strip").removeClass("bg-image");
-};
+  $("#califiaVid")[0].onloadedmetadata = function() {
+      $("div.califia-farms-strip.index-strip").removeClass("bg-image");
+  };
 
-$("#califiaVid")[0].onloadedmetadata = function() {
-    $("div.califia-farms-strip.index-strip").removeClass("bg-image");
-};
+  $("#chameleonVid")[0].onloadedmetadata = function() {
+      $("div.face-to-face-chameleon-strip.index-strip").removeClass("bg-image");
+  };
 
-$("#chameleonVid")[0].onloadedmetadata = function() {
-    $("div.face-to-face-chameleon-strip.index-strip").removeClass("bg-image");
-};
+  $("#healthAdeVid")[0].onloadedmetadata = function() {
+      $("div.health-ade-strip.index-strip").removeClass("bg-image");
+  };
 
-$("#healthAdeVid")[0].onloadedmetadata = function() {
-    $("div.health-ade-strip.index-strip").removeClass("bg-image");
-};
+  $("#longTrailVid")[0].onloadedmetadata = function() {
+      $("div.long-trail-brewing-strip.index-strip").removeClass("bg-image");
+  };
 
-$("#longTrailVid")[0].onloadedmetadata = function() {
-    $("div.long-trail-brewing-strip.index-strip").removeClass("bg-image");
-};
+  function heightOfVideo() {
+      var videoHeight = $("#ballastVid").height();
+      $("div.index-strip").height(videoHeight);
+  }
+
 });
