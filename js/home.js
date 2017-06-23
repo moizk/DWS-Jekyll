@@ -197,8 +197,11 @@ $(document).ready(function(){
   // window resize event
   $(window).resize(function() {
     if ($(window).width() < 991) {
-      $("div.index-strip").css("height", "100vh");
+      $("div.index-strip").css("height", "auto");
       $("div.index-strip").removeClass("no-bg");
+
+      //$("div.index-strip").css({"height": "0", "width": "100%", "padding-top": "66.66%", "background-size": "contain" });
+      //$("#ballastStrip").css({"position": "absolute", "top": 0, "bottom": 0, "right": 0, "left": 0 });
     } else {
       heightOfVideo();
       $("div.index-strip").addClass("no-bg");
@@ -206,6 +209,7 @@ $(document).ready(function(){
   });
 
   if ($(window).width() < 991) {
+    $("div.index-strip").css("height", "auto");
     $("div.index-strip").removeClass("no-bg");
   } else {
     heightOfVideo();

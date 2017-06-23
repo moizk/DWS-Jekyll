@@ -2490,6 +2490,21 @@ div.guide-container {
     }
   }
 
+  /* shrink navbar and logo */
+  @media screen and (max-width: 767px) {
+    div.dws-website {
+      margin-top: 90px;
+    }
+
+    nav.top-navigation a.navbar-brand {
+      height: 90px;
+    }
+
+    nav.top-navigation img {
+      height: 90px;
+    }
+  }
+
   @media screen and (max-width: 1008px) {
     div.client-strip div.copy {
       margin: auto;
