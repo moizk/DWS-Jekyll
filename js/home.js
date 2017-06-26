@@ -213,27 +213,29 @@ $(document).ready(function(){
     $("div.index-strip").removeClass("no-bg");
   } else {
     heightOfVideo();
+    $("div.index-strip").removeClass("bg-image");
   }
 
-  $("#ballastVid")[0].onloadedmetadata = function() {
-      $("div.face-to-face-strip.index-strip").removeClass("bg-image");
-  };
-
-  $("#califiaVid")[0].onloadedmetadata = function() {
-      $("div.califia-farms-strip.index-strip").removeClass("bg-image");
-  };
-
-  $("#chameleonVid")[0].onloadedmetadata = function() {
-      $("div.face-to-face-chameleon-strip.index-strip").removeClass("bg-image");
-  };
-
-  $("#healthAdeVid")[0].onloadedmetadata = function() {
-      $("div.health-ade-strip.index-strip").removeClass("bg-image");
-  };
-
-  $("#longTrailVid")[0].onloadedmetadata = function() {
-      $("div.long-trail-brewing-strip.index-strip").removeClass("bg-image");
-  };
+  // $("#ballastVid")[0].oncanplay = function() {
+  //   console.log("load");
+  //     $("div.face-to-face-strip.index-strip").removeClass("bg-image");
+  // };
+  //
+  // $("#califiaVid")[0].oncanplay  = function() {
+  //     $("div.califia-farms-strip.index-strip").removeClass("bg-image");
+  // };
+  //
+  // $("#chameleonVid")[0].oncanplay  = function() {
+  //     $("div.face-to-face-chameleon-strip.index-strip").removeClass("bg-image");
+  // };
+  //
+  // $("#healthAdeVid")[0].oncanplay  = function() {
+  //     $("div.health-ade-strip.index-strip").removeClass("bg-image");
+  // };
+  //
+  // $("#longTrailVid")[0].oncanplay = function() {
+  //     $("div.long-trail-brewing-strip.index-strip").removeClass("bg-image");
+  // };
 
   function heightOfVideo() {
       var videoHeight = $("#ballastVid").height();
