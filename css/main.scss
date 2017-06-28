@@ -6,6 +6,11 @@
 /* Common
 /*
 /*****************************************************************************/
+@font-face {
+  font-family: "proxima-nova";
+  src: url(../fonts/ProximaNova-Semibold.otf);
+}
+
  * {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
  }
@@ -718,7 +723,8 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/health-ade.jpg);
+    // background-image: url(../img/clients/health-ade.jpg);
+    background-image: url(../img/clients/healthAdePoster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -798,7 +804,8 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/face-to-face-ballast.jpg);
+    // background-image: url(../img/clients/face-to-face-ballast.jpg);
+    background-image: url(../img/clients/ballastPoster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -878,7 +885,8 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/califia-final.jpg);
+    // background-image: url(../img/clients/califia-final.jpg);
+    background-image: url(../img/clients/califiaPoster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -958,7 +966,8 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/longtrail.jpg);
+    // background-image: url(../img/clients/longtrail.jpg);
+    background-image: url(../img/clients/longTrailPoster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1040,7 +1049,8 @@ div.clients-page-header {
     /* Typography */
     /* Visual */
     background-color: #000;
-    background-image: url(../img/clients/face-to-face-chameleon.jpg);
+    // background-image: url(../img/clients/face-to-face-chameleon.jpg);
+    background-image: url(../img/clients/chameleonPoster.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2052,34 +2062,78 @@ div.no-bg {
   background: none;
 }
 
-div.face-to-face-strip.index-strip.bg-image {
-  background-image: url(../img/clients/ballastPoster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// div.face-to-face-strip.index-strip.bg-image {
+//   background-image: url(../img/clients/ballastPoster.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+//
+// div.califia-farms-strip.index-strip.bg-image {
+//   background-image: url(../img/clients/califiaPoster.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+//
+// div.face-to-face-chameleon-strip.index-strip.bg-image {
+//   background-image: url(../img/clients/chameleonPoster.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+//
+// div.health-ade-strip.index-strip.bg-image {
+//   background-image: url(../img/clients/healthAdePoster.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+//
+// div.long-trail-brewing-strip.index-strip.bg-image {
+//   background-image: url(../img/clients/longTrailPoster.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-div.califia-farms-strip.index-strip.bg-image {
-  background-image: url(../img/clients/califiaPoster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+div.home-strip {
+  hr {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 1px solid lightgrey;
+    height: 4px;
+    background: #eee;
+    border-radius: 10px;
+    width: 430px;
+  }
 
-div.face-to-face-chameleon-strip.index-strip.bg-image {
-  background-image: url(../img/clients/chameleonPoster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  h2 {
+    padding-top: 100px;
+    font-size: 50px;
+    line-height: 1.1;
+  }
 
-div.health-ade-strip.index-strip.bg-image {
-  background-image: url(../img/clients/healthAdePoster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  h3 {
+    font-size: 35px;
+    font-style: normal;
+  }
 
-div.long-trail-brewing-strip.index-strip.bg-image {
-  background-image: url(../img/clients/longTrailPoster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  h4 {
+    font-size: 30px;
+  }
+
+  i {
+    font-size: 100px;
+  }
+
+  .rsign {
+    font-size: 25px;
+    top: -5px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    h2 {
+      padding-top: 0;
+    }
+  }
 }
 
 /*****************************************************************************/

@@ -7,15 +7,17 @@ $(document).ready(function(){
   var bvideo = $('#ballast-point-video')
   var player = new Vimeo.Player(bvideo);
   $('#lord-jesus').on("click", function() {
-    //pauseAllVids();
+    pauseAllVids();
     $('.face-to-face-strip').hide();
     $('.ballast-point-area').show();
     player.play();
     var onEnded = function() {
+      playAllVids();
       $('.ballast-point-area').hide();
       $('.face-to-face-strip').show();
     };
     player.on('ended', onEnded);
+    player.on('pause', playAllVids);
   });
 
   // chameleon
@@ -24,15 +26,17 @@ $(document).ready(function(){
   var cvideo = $('#chameleon-video')
   var cplayer = new Vimeo.Player(cvideo);
   $('#lord-moses').on("click", function() {
-    //pauseAllVids();
+    pauseAllVids();
     $('.face-to-face-chameleon-strip').hide();
     $('.chameleon-video-area').show();
     cplayer.play();
     var conEnded = function() {
+      playAllVids();
       $('.chameleon-video-area').hide();
       $('.face-to-face-chameleon-strip').show();
     };
     cplayer.on('ended', conEnded);
+    cplayer.on('pause', playAllVids);
   });
 
   // health-ade
@@ -41,15 +45,17 @@ $(document).ready(function(){
   var dvideo = $('#health-ade-video')
   var dplayer = new Vimeo.Player(dvideo);
   $('#lord-genghis').on("click", function() {
-    //pauseAllVids();
+    pauseAllVids();
     $('.health-ade-strip').hide();
     $('.health-ade-video-area').show();
     dplayer.play();
     var conEnded = function() {
+      playAllVids();
       $('.health-ade-video-area').hide();
       $('.health-ade-strip').show();
     };
     dplayer.on('ended', conEnded);
+    dplayer.on('pause', playAllVids);
   });
 
   // long trail brewing
@@ -58,15 +64,17 @@ $(document).ready(function(){
   var ltbvideo = $('#long-trail-brewing-video')
   var ltbplayer = new Vimeo.Player(ltbvideo);
   $('#lordy-lord').on("click", function () {
-    //pauseAllVids();
+    pauseAllVids();
     $('.long-trail-brewing-strip').hide();
     $('.long-trail-brewing-area').show();
     ltbplayer.play();
     var ltbOnEnded = function() {
+      playAllVids();
       $('.long-trail-brewing-area').hide();
       $('.long-trail-brewing-strip').show();
     };
     ltbplayer.on('ended', ltbOnEnded);
+    ltbplayer.on('pause', playAllVids);
   });
 
   // califia farms
@@ -75,15 +83,17 @@ $(document).ready(function(){
   var cfvideo = $('#califia-video')
   var cfplayer = new Vimeo.Player(cfvideo);
   $('#lord-vadar').on("click", function () {
-    //pauseAllVids();
+    pauseAllVids();
     $('.califia-farms-strip').hide();
     $('.califia-video-area').show();
     cfplayer.play();
     var cfOnEnded = function() {
+      playAllVids();
       $('.califia-video-area').hide();
       $('.califia-farms-strip').show();
     };
     cfplayer.on('ended', cfOnEnded);
+    cfplayer.on('pause', playAllVids);
   });
 
   //processScroll();
@@ -187,6 +197,15 @@ $(document).ready(function(){
     $("#longTrailVid")[0].pause();
   }
 
+  function playAllVids() {
+    $("#ballastVid")[0].play();
+    $("#califiaVid")[0].play();
+    $("#chameleonVid")[0].play();
+    $("#healthAdeVid")[0].play();
+    $("#longTrailVid")[0].play();
+  }
+
+
   //scrollEvent();
   // vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#healthAdeVid"), $("#longTrailVid")];
   // for (var i = 0; i < vidArr.length; i++) {
@@ -198,25 +217,25 @@ $(document).ready(function(){
   $(window).resize(function() {
     if ($(window).width() < 991) {
       $("div.index-strip").css("height", "auto");
-      //$("div.index-strip").removeClass("no-bg");
-      $("div.index-strip").addClass("bg-image");
+      $("div.index-strip").removeClass("no-bg");
+      //$("div.index-strip").addClass("bg-image");
 
       //$("div.index-strip").css({"height": "0", "width": "100%", "padding-top": "66.66%", "background-size": "contain" });
       //$("#ballastStrip").css({"position": "absolute", "top": 0, "bottom": 0, "right": 0, "left": 0 });
     } else {
       heightOfVideo();
       $("div.index-strip").addClass("no-bg");
-      $("div.index-strip").removeClass("bg-image");
+      //$("div.index-strip").removeClass("bg-image");
     }
   });
 
   if ($(window).width() < 991) {
     $("div.index-strip").css("height", "auto");
-    //$("div.index-strip").removeClass("no-bg");
-    $("div.index-strip").addClass("bg-image");
+    $("div.index-strip").removeClass("no-bg");
+    //$("div.index-strip").addClass("bg-image");
   } else {
     heightOfVideo();
-    $("div.index-strip").removeClass("bg-image");
+    //$("div.index-strip").removeClass("bg-image");
   }
 
   // $("#ballastVid")[0].oncanplay = function() {
