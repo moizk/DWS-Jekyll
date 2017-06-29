@@ -218,6 +218,7 @@ $(document).ready(function(){
     if ($(window).width() < 991) {
       $("div.index-strip").css("height", "auto");
       $("div.index-strip").removeClass("no-bg");
+      $('div.index-strip > div').removeClass("seriesText");
       //$("div.index-strip").addClass("bg-image");
 
       //$("div.index-strip").css({"height": "0", "width": "100%", "padding-top": "66.66%", "background-size": "contain" });
@@ -225,6 +226,7 @@ $(document).ready(function(){
     } else {
       heightOfVideo();
       $("div.index-strip").addClass("no-bg");
+      $('div.index-strip > div').addClass("seriesText");
       //$("div.index-strip").removeClass("bg-image");
     }
   });
@@ -232,9 +234,11 @@ $(document).ready(function(){
   if ($(window).width() < 991) {
     $("div.index-strip").css("height", "auto");
     $("div.index-strip").removeClass("no-bg");
+    $('div.index-strip > div').removeClass("seriesText");
     //$("div.index-strip").addClass("bg-image");
   } else {
     heightOfVideo();
+    $('div.index-strip > div').addClass("seriesText");
     //$("div.index-strip").removeClass("bg-image");
   }
 

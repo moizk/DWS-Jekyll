@@ -2092,7 +2092,18 @@ div.no-bg {
 //   background-size: cover;
 // }
 
-div.home-strip {
+div.index-strip {
+  min-height: 500px;
+
+  .seriesText {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+  }
+
   hr {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -2100,26 +2111,28 @@ div.home-strip {
     height: 4px;
     background: #eee;
     border-radius: 10px;
-    width: 430px;
+    width: 350px;
   }
 
   h2 {
-    padding-top: 100px;
-    font-size: 50px;
+    // padding-top: 100px;
+    text-transform: initial;
+    font-size: 40px;
     line-height: 1.1;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-style: normal;
+    margin-left: 12.34px;
   }
 
   h4 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   i {
-    font-size: 100px;
+    font-size: 90px;
   }
 
   .rsign {
@@ -2127,11 +2140,62 @@ div.home-strip {
     top: -5px;
   }
 
+    @media screen and (min-width: 1950px) {
+      .seriesText {
+        top: 59%;
+      }
+
+      hr {
+        width: 500px;
+      }
+
+      h2 {
+        font-size: 60px;
+      }
+
+      h3 {
+        font-size: 35px;
+      }
+
+      h4 {
+        font-size: 25px;
+      }
+
+      i {
+        font-size: 105px;
+      }
+    }
+
+  @media screen and (min-width: 2100px) {
+    .seriesText {
+      top: 61%;
+    }
+    hr {
+      width: 620px;
+    }
+
+    h2 {
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 45px;
+    }
+
+    h4 {
+      font-size: 35px;
+    }
+
+    i {
+      font-size: 125px;
+    }
+  }
+
   @media screen and (max-width: 991px) {
     padding-top: 25px;
     padding-bottom: 25px;
     h2 {
-      padding-top: 0;
+      padding-top: 100px;
     }
   }
 }
