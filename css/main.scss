@@ -333,9 +333,9 @@ div.face-to-face-content {
     background-position: center;
     color: #fff;
     /* Misc */
-    @media screen and (max-width: 1518px) {
-      background-size: inherit;
-    }
+    // @media screen and (max-width: 1518px) {
+    //   background-size: inherit;
+    // }
     @media screen and (max-width: 540px) {
       background-position: 60% center;
     }
@@ -974,9 +974,9 @@ div.clients-page-header {
     color: #fff;
     text-shadow: 1px 0px 8px black;
     /* Misc */
-    @media screen and (max-width: 1518px) {
-      background-size: inherit;
-    }
+    // @media screen and (max-width: 1518px) {
+    //   background-size: inherit;
+    // }
     @media screen and (max-width: 540px) {
       background-position: 60% center;
     }
@@ -2095,6 +2095,19 @@ div.no-bg {
 div.index-strip {
   min-height: 500px;
 
+  a {
+    background-image: url(../img/play.png);
+    background-size: 300px;
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 55px;
+    width: 55px;
+    margin: auto;
+    cursor: pointer;
+  }
+
   .seriesText {
     position: absolute;
     top: 63%;
@@ -2198,6 +2211,32 @@ div.index-strip {
       padding-top: 100px;
     }
   }
+}
+
+#scrollCarat {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-size: 40px;
+  left: 49%;
+
+  @media screen and (max-width: 1476px) {
+    display: none;
+  }
+}
+
+#scrollCarat:hover {
+  left: 48%;
+}
+
+#scrollCarat:hover .fa-chevron-down:before {
+  display: none;
+}
+
+#scrollCarat:hover .fa-chevron-down:after {
+  font-size: 16px;
+  font-style: italic;
+  content: "Scroll Down";
 }
 
 /*****************************************************************************/

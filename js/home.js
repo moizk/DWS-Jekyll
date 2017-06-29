@@ -268,4 +268,8 @@ $(document).ready(function(){
       $("div.index-strip").height(videoHeight);
   }
 
+  $(window).one('scroll',function() {
+    $("#scrollCarat").hide();
+  });
+
 });
