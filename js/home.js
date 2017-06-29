@@ -83,6 +83,7 @@ $(document).ready(function(){
   var cfvideo = $('#califia-video')
   var cfplayer = new Vimeo.Player(cfvideo);
   $('#lord-vadar').on("click", function () {
+    $("#scrollCarat").hide();
     pauseAllVids();
     $('.califia-farms-strip').hide();
     $('.califia-video-area').show();
