@@ -9,38 +9,24 @@ title: Printing Capabilities - DWS Printing Associates, Inc. - Label & Packaging
   <i class="ion-star"></i>
 </div>
 
-<div class="introducing-beauty-strip">
-  <h2>Introducing, <br><i>Beauty</i></h2>
-  <h3>Our Omet X6 10-Color Flexographic Press</h3>
-  <div class="text-center">
-    <a href="#" id="lord-jesus">
-      <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-    </a>
+<div class="introducing-beauty-strip index-strip no-bg bg-image home-strip">
+  <video id="introducingBeautyVid" width="100%" height="100%" preload loop autoplay>
+    <!-- <source src="img/clients/chameleonVid.webm" type="video/webm"> -->
+    <source src="img/printing/introducingBeautyVid.mp4" type="video/mp4">
+  </video>
+  <div class="seriesText">
+    <h2>Introducing, <br><i>Beauty</i></h2>
+    <h3>Our Omet X6 10-Color Flexographic Press</h3>
+    <div class="text-center">
+      <a href="#" id="lord-jesus">
+      </a>
+    </div>
   </div>
 </div>
 
 <div class="beauty-video-area" id="first-video">
   <iframe id="beauty-video" src="//player.vimeo.com/video/154764266?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
-
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script>
-$(function() {
-  $('.beauty-video-area').hide();
-  var bvideo = $('#beauty-video')
-  var player = new Vimeo.Player(bvideo);
-  $('#lord-jesus').on("click", function() {
-    $('.introducing-beauty-strip').hide();
-    $('.beauty-video-area').show();
-    player.play();
-    var onEnded = function() {
-      $('.beauty-video-area').hide();
-      $('.introducing-beauty-strip').show();
-    };
-    player.on('ended', onEnded);
-  });
-});
-</script>
 
 <div class="story-content">
   <h3 class="text-center smaller-nudge">Shrink Sleeve + Roll Fed</h3>
@@ -129,8 +115,5 @@ $(function() {
   </center>
 </div>
 
-<script>
-  $(document).ready(function(){
-    $("#first-video").fitVids();
-  });
-</script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="js/printing.js"></script>
