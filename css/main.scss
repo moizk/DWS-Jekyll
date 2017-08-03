@@ -2258,6 +2258,13 @@ div.index-strip {
   font-style: italic;
 }
 
+div.index-film-loop div.call-to-action-message h2.headerFont, div.team-strip h2.headerFont {
+  text-transform: initial;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+
 /*****************************************************************************/
 /*
 /* Buttons
@@ -2655,6 +2662,23 @@ div.guide-container {
       left: 0;
     }
   }
+
+@media screen and (min-width: 992px) {
+  div.index-film-loop {
+    position: relative;
+    div.call-to-action-message {
+      /* Positioning */
+      // position: absolute;
+      // top: 5%;
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      height: 30%;
+      width: 50%;
+      margin: -15% 0 0 -25%;
+    }
+  }
+}
 
   @media screen and (min-width: 1200px) {
     div.client-strip .col-sm-7 {
