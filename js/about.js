@@ -1,0 +1,43 @@
+$(document).ready(function(){
+  $("#about-page-video").fitVids();
+    $('#about-page-video').hide();
+    var avfVideo = $('#about-video-iframe')
+    var avfPlayer = new Vimeo.Player(avfVideo);
+    $('#lord-almighty').on("click", function() {
+      $('#thing-with-videos').hide();
+      $('#about-page-video').show();
+      avfPlayer.play();
+      var avfOnEnded = function() {
+        $('#about-page-video').hide();
+        $('#thing-with-videos').show();
+      };
+      avfPlayer.on('ended', avfOnEnded);
+    });
+
+  // window resize event
+  $(window).resize(function() {
+    if ($(window).width() < 991) {
+      $("div.index-strip").css("height", "auto");
+      $("div.index-strip").removeClass("no-bg");
+      $('div.index-strip > div').removeClass("seriesText");
+    } else {
+      heightOfVideo();
+      $("div.index-strip").addClass("no-bg");
+      $('div.index-strip > div').addClass("seriesText");
+    }
+  });
+
+  if ($(window).width() < 991) {
+    $("div.index-strip").css("height", "auto");
+    $("div.index-strip").removeClass("no-bg");
+    $('div.index-strip > div').removeClass("seriesText");
+  } else {
+    heightOfVideo();
+    $('div.index-strip > div').addClass("seriesText");
+  }
+
+  function heightOfVideo() {
+      var videoHeight = $("#aboutVid").height();
+      $("div.index-strip").height(videoHeight);
+  }
+});

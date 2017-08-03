@@ -256,6 +256,26 @@ div.about-page-header {
   }
 }
 
+div.your-labels {
+    height: 720px;
+    background-color: #000;
+    background-image: url(../img/mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 0px 8px black;
+}
+
+div.your-labels h2 {
+    margin-top: 0;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
 div.story-strip {
   /* Positioning */
   padding: 0;
@@ -2262,6 +2282,7 @@ div.index-film-loop div.call-to-action-message h2.headerFont, div.team-strip h2.
   text-transform: initial;
   font-size: 40px;
   line-height: 1.1;
+  text-shadow: 1px 0px 8px black;
 }
 
 
