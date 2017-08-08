@@ -1664,10 +1664,10 @@ div.printing-strip {
     padding-top: 200px;
     /* Typography */
     text-align: center;
-    font-size: 62px;
-    line-height: 62px;
+    font-size: 40px;
+    line-height: 1.1;
     font-weight: 600;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     /* Visual */
     /* Misc */
     @media screen and (max-width: 540px) {
@@ -1695,10 +1695,10 @@ div.flexo-strip {
     padding-top: 200px;
     /* Typography */
     text-align: center;
-    font-size: 62px;
-    line-height: 62px;
+    font-size: 40px;
+    line-height: 1.1;
     font-weight: 600;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     /* Visual */
     /* Misc */
     @media screen and (max-width: 540px) {
@@ -1726,10 +1726,10 @@ div.big-big-strip {
     padding-top: 200px;
     /* Typography */
     text-align: center;
-    font-size: 62px;
-    line-height: 62px;
+    font-size: 40px;
+    line-height: 1.1;
     font-weight: 600;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     /* Visual */
     /* Misc */
     @media screen and (max-width: 540px) {
@@ -2245,6 +2245,12 @@ div.index-strip {
     h2 {
       padding-top: 100px;
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blockEl {
+    display: block;
   }
 }
 
