@@ -97,6 +97,26 @@ $(document).ready(function(){
     cfplayer.on('pause', playAllVids);
   });
 
+  // sweet water
+  $("#sixth-video").fitVids();
+  $('.sweet-water-area').hide();
+  var swVideo = $('#sweet-water-video')
+  var swPlayer = new Vimeo.Player(swVideo);
+  $('#lord-farquaad').on("click", function () {
+    $("#scrollCarat").hide();
+    pauseAllVids();
+    $('.sweet-water-strip').hide();
+    $('.sweet-water-area').show();
+    swPlayer.play();
+    var swOnEnded = function() {
+      playAllVids();
+      $('.sweet-water-area').hide();
+      $('.sweet-water-strip').show();
+    };
+    swPlayer.on('ended', swOnEnded);
+    swPlayer.on('pause', playAllVids);
+  });
+
   //processScroll();
   var lastScrollTop = 0;
   var goToCalled = false;
