@@ -13,17 +13,15 @@ description: DWS Printing is an industry leader in the label printing business. 
   </div>
 </div>
 
-<div id="thing-with-videos" class="index-film-loop hidden-sm hidden-xs">
+<div id="thing-with-videos" class="index-film-loop hidden-sm hidden-xs index-strip">
   <video width="100%" height="100%" autoplay preload loop>
     <!--<source src="video/wat.webm" type="video/webm">-->
     <source src="http://dws-printing.s3.amazonaws.com/home.mp4" type="video/mp4">
       <!--<source src="films/website-roll-2017.mp4" type="video/mp4" download>-->
     </video>
-    <div class="call-to-action-message">
+    <div class="seriesText">
       <h2>Your Labels, <br>Our Story.</h2>
-      <center>
-        <a href="film.html"><button class="button btn-transparent btn-2x">Watch the film</button></a>
-      </center>
+      <center><button id="filmBtn" class="button btn-transparent btn-2x">Watch the film</button></center>
     </div>
   </div>
 
@@ -31,5 +29,6 @@ description: DWS Printing is an industry leader in the label printing business. 
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $("#thing-with-videos").fitVids();
+    $('#filmBtn').on('click', function() { window.location = '/film.html'; });
   });
   </script>

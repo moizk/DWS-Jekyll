@@ -64,6 +64,9 @@ div.mobile-frame {
 
 div.index-film-loop {
   position: relative;
+  h2 {
+    text-align: center;
+  }
   div.call-to-action-message {
     /* Positioning */
     position: absolute;
@@ -1159,10 +1162,10 @@ div.clients-page-header {
     color: #fff;
     text-shadow: 1px 0px 8px black;
     /* Misc */
-    @media screen and (max-width: 540px) {
-      background-position: 60% center;
-      background-size: cover;
-    }
+    // @media screen and (max-width: 540px) {
+    //   background-position: 60% center;
+    //   background-size: cover;
+    // }
     a {
       color: #fff;
       &:hover {
