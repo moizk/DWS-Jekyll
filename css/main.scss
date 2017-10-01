@@ -1147,6 +1147,7 @@ div.clients-page-header {
     /* Positioning */
     /* Box-model */
     height: 720px;
+    min-height: 720px !important;
     /* Typography */
     /* Visual */
     background-color: #000;
