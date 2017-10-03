@@ -53,7 +53,7 @@ $(document).ready(function(){
   }
 
   function heightOfVideo() {
-      var videoHeight = $("#sixth-video").height();
+      var videoHeight = $("#sweetWaterVid").height();
       $("div.index-strip").height(videoHeight);
   }
 });
