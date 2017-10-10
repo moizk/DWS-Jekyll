@@ -32,7 +32,7 @@ $(document).ready(function(){
 
   // window resize event
   $(window).resize(function() {
-    if ($(window).width() < 991) {
+    if (window.innerWidth < 991) {
       $("div.index-strip").css("height", "auto");
       $("div.index-strip").removeClass("no-bg");
       $('div.index-strip > div').removeClass("seriesText");
@@ -43,7 +43,7 @@ $(document).ready(function(){
     }
   });
 
-  if ($(window).width() < 991) {
+  if (window.innerWidth < 991) {
     $("div.index-strip").css("height", "auto");
     $("div.index-strip").removeClass("no-bg");
     $('div.index-strip > div').removeClass("seriesText");

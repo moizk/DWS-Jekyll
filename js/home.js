@@ -98,24 +98,24 @@ $(document).ready(function(){
   });
 
   // sweet water
-  $("#sixth-video").fitVids();
-  $('.sweet-water-area').hide();
-  var swVideo = $('#sweet-water-video')
-  var swPlayer = new Vimeo.Player(swVideo);
-  $('#lord-farquaad').on("click", function () {
-    $("#scrollCarat").hide();
-    pauseAllVids();
-    $('.sweet-water-strip').hide();
-    $('.sweet-water-area').show();
-    swPlayer.play();
-    var swOnEnded = function() {
-      playAllVids();
-      $('.sweet-water-area').hide();
-      $('.sweet-water-strip').show();
-    };
-    swPlayer.on('ended', swOnEnded);
-    swPlayer.on('pause', playAllVids);
-  });
+  // $("#sixth-video").fitVids();
+  // $('.sweet-water-area').hide();
+  // var swVideo = $('#sweet-water-video')
+  // var swPlayer = new Vimeo.Player(swVideo);
+  // $('#lord-farquaad').on("click", function () {
+  //   $("#scrollCarat").hide();
+  //   pauseAllVids();
+  //   $('.sweet-water-strip').hide();
+  //   $('.sweet-water-area').show();
+  //   swPlayer.play();
+  //   var swOnEnded = function() {
+  //     playAllVids();
+  //     $('.sweet-water-area').hide();
+  //     $('.sweet-water-strip').show();
+  //   };
+  //   swPlayer.on('ended', swOnEnded);
+  //   swPlayer.on('pause', playAllVids);
+  // });
 
   //processScroll();
   var lastScrollTop = 0;
@@ -236,7 +236,7 @@ $(document).ready(function(){
   // }
   // window resize event
   $(window).resize(function() {
-    if ($(window).width() < 991) {
+    if (window.innerWidth < 991) {
       $("div.index-strip").css("height", "auto");
       $("div.index-strip").removeClass("no-bg");
       $('div.index-strip > div').removeClass("seriesText");
@@ -252,7 +252,7 @@ $(document).ready(function(){
     }
   });
 
-  if ($(window).width() < 991) {
+  if (window.innerWidth < 991) {
     $("div.index-strip").css("height", "auto");
     $("div.index-strip").removeClass("no-bg");
     $('div.index-strip > div').removeClass("seriesText");

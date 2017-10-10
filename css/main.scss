@@ -55,7 +55,7 @@ div.mobile-frame {
       font-size: 42px;
       line-height: 55px;
       font-weight: 600;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       /* Visual */
       /* Misc */
     }
@@ -732,7 +732,7 @@ div.clients-page-header {
         font-size: 42px;
         line-height: 55px;
         font-weight: 600;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         /* Visual */
         /* Misc */
       }
@@ -2240,6 +2240,7 @@ div.index-strip {
     text-transform: initial;
     font-size: 40px;
     line-height: 1.1;
+    font-weight: 600;
   }
 
   h3 {
