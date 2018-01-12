@@ -1491,6 +1491,12 @@ div.team-page {
       float: none;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .col-sm-6 .img-responsive, .col-sm-4 .img-responsive {
+      width: 100%;
+    }
+  }
 }
 
 p.team-bio-big {
@@ -1587,8 +1593,8 @@ p.team-bio {
       height: 218px;
       top: 0px;
       margin-top: 0px;
-      padding: 0px;
-      font-size: 10.5px;
+      padding: 5px;
+      font-size: 10px;
     }
 
     @media screen and (min-width: 992px) {
@@ -1596,8 +1602,8 @@ p.team-bio {
       height: 290px;
       top: 0px;
       margin-top: 0px;
-      padding: 0px;
-      font-size: 14px;
+      padding: 10px;
+      font-size: 13px;
     }
 
     @media screen and (min-width: 1201px) {
