@@ -39,25 +39,6 @@ $(document).ready(function(){
     cplayer.on('pause', playAllVids);
   });
 
-  // health-ade
-  $("#third-video").fitVids();
-  $('.health-ade-video-area').hide();
-  var dvideo = $('#health-ade-video')
-  var dplayer = new Vimeo.Player(dvideo);
-  $('#lord-genghis').on("click", function() {
-    pauseAllVids();
-    $('.health-ade-strip').hide();
-    $('.health-ade-video-area').show();
-    dplayer.play();
-    var conEnded = function() {
-      playAllVids();
-      $('.health-ade-video-area').hide();
-      $('.health-ade-strip').show();
-    };
-    dplayer.on('ended', conEnded);
-    dplayer.on('pause', playAllVids);
-  });
-
   // long trail brewing
   $("#fourth-video").fitVids();
   $('.long-trail-brewing-area').hide();
@@ -140,8 +121,8 @@ $(document).ready(function(){
   }
 
   function getVisible(direction) {
-    var sectionsArr = [$("#ballastStrip"), $("#califiaStrip"), $("#chameleonStrip"), $("#healthAdeStrip"), $("#longTrailStrip")],
-      vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#healthAdeVid"), $("#longTrailVid")],
+    var sectionsArr = [$("#ballastStrip"), $("#califiaStrip"), $("#chameleonStrip"), $("#longTrailStrip")],
+      vidArr = [$("#ballastVid"), $('#califiaVid'), $("#chameleonVid"), $("#longTrailVid")],
       scrollTop = $(this).scrollTop(),
       scrollBot = scrollTop + $(this).height(),
       elTop = 0,
@@ -214,7 +195,6 @@ $(document).ready(function(){
     $("#ballastVid")[0].pause();
     $("#califiaVid")[0].pause();
     $("#chameleonVid")[0].pause();
-    $("#healthAdeVid")[0].pause();
     $("#longTrailVid")[0].pause();
   }
 
@@ -222,7 +202,6 @@ $(document).ready(function(){
     $("#ballastVid")[0].play();
     $("#califiaVid")[0].play();
     $("#chameleonVid")[0].play();
-    $("#healthAdeVid")[0].play();
     $("#longTrailVid")[0].play();
   }
 
